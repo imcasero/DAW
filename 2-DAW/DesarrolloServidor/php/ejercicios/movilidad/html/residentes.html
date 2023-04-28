@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitud para residentes</title>
+  </head>
+  <body>
+    <h3>Solicitud Residentes</h3>
+    <form action="../php/residentes.php" method="post">
+      <label for="matricula">Introduzca la matricula</label></br>
+      <input type="text" name="matricula" placeholder="1111-AAA"></br></br>
+
+      <label for="direccion">Direccion</label></br>
+      <input type="text" name="direccion" placeholder="Calle Numero"></br></br>
+
+      <label for="inicio">Fecha de ingreso</label></br>
+      <input type="text" name="inicio" placeholder="YYYY/MM/DD"></br></br>
+
+      <label for="salida">Fecha de salida</label></br>
+      <input type="text" name="salida" placeholder="YYYY/MM/DD"></br></br>
+
+      <label for="just">Justificante de residencia</label></br>
+      <input type="file" name="just" required></br></br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

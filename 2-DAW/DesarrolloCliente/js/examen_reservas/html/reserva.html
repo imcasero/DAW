@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservas</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    form {
+      margin: 0 auto;
+      text-align: left;
+      width: 50%;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 1em;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    input[type="text"] {
+      padding: 0.5em;
+      margin-bottom: 1em;
+      border-radius: 0.25em;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 0.25em;
+      cursor: pointer;
+      margin-right: 1em;
+    }
+
+    #enviar {
+      transition: 0.5s;
+      background-color: #2196f3;
+    }
+
+    button:hover {
+      transition: 0.5s;
+      color: #3e8e41;
+      background-color: white;
+    }
+
+    #enviar:hover {
+      transition: 0, 5s;
+      color: #0d47a1;
+      background-color: white;
+    }
+    .error {
+      border-color: #ec452d !important;
+    }
+    div .error {
+      border-bottom: 2px solid #ec452d !important;
+    }
+    p .error {
+      color: red !important;
+    }
+  </style>
+  <body>
+    <form action="../php/añadir.php" method="post">
+      <h1>Rellene el siguiente formulario</h1>
+      <label for="hora">Hora de reserva :</label>
+      <input type="text" name="hora" id="hora" placeholder="00:00" /><br />
+      <label for="fecha">Introduzca el dia deseado</label>
+      <input
+        type="text"
+        name="fecha"
+        id="fecha"
+        placeholder="AAAA/MM/DD"
+      /><br />
+      <label for="comensales">Numero de comensales</label>
+      <input
+        type="text"
+        name="comensales"
+        id="comensales"
+        placeholder="maximo 10"
+      />
+
+      <button onclick="validar(event)">Validar</button>
+      <button type="submit" id="enviar" hidden>Reservar</button>
+    </form>
+  </body>
+  <script src="../js/validar.js"></script>
+</html>

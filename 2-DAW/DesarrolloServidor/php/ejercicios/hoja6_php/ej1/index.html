@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja 6 ej 1 y 5</title>
+</head>
+<body>
+    <form action="index.php" enctype="multipart/form-data" method="post">
+        <label for="textBusqueda"> Texto a buscar *</label>
+        <input type="text" name="textBusqueda">
+            </br></br>
+        <label for="loca">Buscar en: </label>
+        <input type="radio" name="loca" value="TituloCancione">Titulos de cancioes
+        <input type="radio" name="loca" value="NombreAlbum">Nombres de album
+        <input type="radio" name="loca" value="Ambos"> Ambos
+            </br></br>
+        <label for="genero">Eliga el genero de música</label>
+        <select name="genero[]">
+            <option value="rock">rock</option>
+            <option value="pop">pop</option>
+            <option value="electronica">electronica</option>
+            <option value="clasica">clasica</option>
+        </select>
+        </br></br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

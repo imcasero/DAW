@@ -1,0 +1,2 @@
+Crearemos una tabla de 10x10, donde al pulsar una celda estee se colorara de rojo, y las adyacentes de verde, al segundo click en la misma celda se pintara
+de amarillo y se borrara el color de las adyacentes, en caso de clickar otra celda, se borrara las anteriores y se pintara como primer click.

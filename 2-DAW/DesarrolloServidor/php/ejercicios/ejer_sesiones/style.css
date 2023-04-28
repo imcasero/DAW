@@ -1,0 +1,30 @@
+* {
+  font-size: 15px;
+}
+body {
+  background-color: #46acc2;
+}
+.contenedor {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 350px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
+}
+.contenedor label {
+  font-size: 15px;
+  margin-left: 20px;
+}
+.contenedor label,
+input {
+  margin-top: 20px;
+}
+.boton {
+  text-align: center;
+  padding: 10px;
+}
+.boton button {
+  background-color: #46acc2;
+  width: 90%;
+}

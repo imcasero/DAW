@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>log in</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Iniciar sesión</h2>
+      <form action="auth.php" method="post">
+        <input type="text" placeholder="Email" name="email" required />
+        <input type="password" placeholder="Contraseña" name="pass" required />
+        <div style="margin-bottom: 20px">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">Acepto los términos y condiciones</label>
+        </div>
+        <input type="submit" value="Iniciar sesión" />
+      </form>
+    </div>
+    <div class="enlaces">
+      <a href="registro.html">Registrate</a>
+    </div>
+  </body>
+</html>

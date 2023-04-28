@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menus</title>
+  </head>
+  <body>
+    <header>
+      <img class="img-ramen" src="../../media/img/icon/IconoRamen.png" />
+      <h1 style="font-family: shojumaru">Pepe's Home</h1>
+    </header>
+    <!--Barra de navegación-->
+    <nav>
+      <ul>
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li class="col-2 text-center">
+          <select
+            name="select"
+            class="form-select"
+            id="select"
+            onchange="location = this.value;"
+          >
+            <option value="#">Letter</option>
+            <option value="./carta_admin.html">Platos</option>
+            <option value="./alergenos.html">Alergenos</option>
+            <option value="./menus.html">Menus</option>
+          </select>
+        </li>
+        <li><a href="./registro.html">Register</a></li>
+        <li><a href="./reservas_admin.html">Reserve</a></li>
+        <li><a href="ofertas.html">Offers!!</a></li>
+      </ul>
+    </nav>
+
+    <div id="contenedor_carta">
+      <div id="contenedor_vista"></div>
+    </div>
+
+    <div id="loading-gif">
+      <img src="../../media/gif/gifRamen.gif" alt="Loading gif" />
+    </div>
+    <div style="height: 40px"></div>
+    <footer>
+      <p>© 2022 Copyright: Pepe's House, Inc. All rights reserved</p>
+    </footer>
+  </body>
+  <script src="./../js/menus.js"></script>
+  <link rel="stylesheet" href="../css/carta_admin.css" />
+</html>

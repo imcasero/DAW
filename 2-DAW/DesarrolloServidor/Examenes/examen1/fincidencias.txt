@@ -1,0 +1,8 @@
+Nºincidencia$categoria$direccion incidencia$descripcion$email$fecha$hora
+130$Parques infantiles$C/ Comunidad de Madrid, 75$Se ha soltado un anclaje del tobogan$antonio@gmail.com$2022/11/18$17:30
+131$Calzada$c/ Asturias, 5$Hay un boquete en la calle a la altura del numero 5$maria@gmail.com$2022/11/18$18:30
+132$iluminacion$C/ Galicia, 33$La farola situada en este punto de la calle no enciende$maria@gmail.com$2022/11/17$8:30
+133$Parques infantiles$123$123$132$13$321
+134$Parques infantiles$123$123$132$13$321
+135$Parques infantiles$123$123$123$123$123
+136$Parques infantiles$Calle añover$Farola caida$asfdasf$asdsad$123123

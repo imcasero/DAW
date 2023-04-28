@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="respuesta.php" enctype="multipart/form-data" method="post">
+      <input type="text" name="nombre" />
+    </br>
+      <input type="hidden" name="username" value="“$usuario”" />
+    
+    </br>
+      <input type="radio" name="sexo" value="M" cheked />Mujer
+      <input type="radio" name="sexo" value="H" />Hombre
+    </br>
+      <select multiple name="idiomas[]">
+        <option value="ingles">Ingles</option>
+        <option value="frances">Frances</option>
+        <option value="español">ESpañol</option>
+        <option value="aleman">Aleman</option>
+      </select>
+    </br>
+      <input type="checkbox" name="extras[]" value="granja">Granja
+      <input type="checkbox" name="extras[]" value="jardin">Jardin
+      <input type="checkbox" name="extras[]" value="piscina">Piscina
+
+      <input type="file" name="imagen" >
+    </br>
+    </br>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>

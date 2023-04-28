@@ -1,0 +1,98 @@
+:root {
+  --gris: #f3eeee;
+  --rojo: #ec452d;
+  --negro: #403e3e;
+}
+@font-face {
+  font-family: "shojumaru";
+  src: url("../../fonts/shojumaru-regular.ttf");
+}
+@font-face {
+  font-family: "hashiba";
+  src: url("../../fonts/Hashiba.ttf");
+}
+#vista {
+  width: 70%;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--rojo);
+}
+h1,
+img {
+  display: inline-block;
+}
+h3,
+h2,
+h4,
+h5,
+h6 {
+  font-size: 15px;
+  font-family: hashiba;
+}
+nav {
+  position: sticky;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: hashiba;
+}
+nav li {
+  font-size: 20px;
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+}
+nav a:hover {
+  color: var(--rojo);
+}
+
+.slider div img {
+  /*Para el slider horizontal*/
+  display: inline-block;
+}
+#nosotros {
+  border-top: 3px solid var(--rojo);
+  /* border-right: 2px solid var(--rojo); */
+  text-align: center;
+}
+.nosotros img {
+  width: 40%;
+}
+footer {
+  position: fixed !important;
+  bottom: 0 !important;
+  background-color: var(--rojo) !important;
+  height: 50px;
+}
+/*Traladar a css login y  Register*/
+
+.error {
+  border-color: #ec452d !important;
+}
+div .error {
+  border-bottom: 2px solid #ec452d !important;
+}
+p .error {
+  color: red !important;
+}
+td {
+  height: 50px;
+  width: 70px;
+}
+#tablaDatos,
+#tablaAst {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#tablaDatos,
+#tablaAst td {
+  background-color: #403e3e;
+  color: white;
+}
+#tablaDatos td:hover {
+  cursor: pointer;
+}

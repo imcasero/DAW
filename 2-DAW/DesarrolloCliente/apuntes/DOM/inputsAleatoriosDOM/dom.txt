@@ -1,0 +1,26 @@
+metodos del dom
+-------------------------------
+
+document.createElement
+document.createTextNode
+document.createAttribute
+document.setAttributeNode
+element.setAttribute
+node.appendChild
+
+ejemplos:
+    const heading = document.createElement("h1");
+    const headingText = document.createTextNode("Big Head!");
+    heading.appendChild(headingText);
+    document.body.appendChild(heading);
+
+    const att = document.createAttribute("my_attrib");
+    att.value = "newVal";
+    div.setAttributeNode(att);
+    console.log(node.getAttribute("my_attrib"));
+
+Nodos del dom
+-------------------------------
+Nodo de tipo Element
+Nodo de tipo Text node 
+Nodo de tipo Attribute Node

@@ -1,0 +1,10 @@
+Las variables dentro de procedimeintos son temporales, es decir a la hora de crear una variable dentro
+de un procedimeinto, cunado este termine ese valor no existira.
+Al crear un variable llamada igual dentro de un procedimiento no afectara a la original, pero si en
+otros ficheros que esten enlazados al mismo DOM.
+Para que almacene el valor del procedimiento no hay que declararla solo darle el valor.
+Mirar diferencia entre let const y var.
+Var : globales
+Let: a procedimeintos
+Const : Constantes
+split...

@@ -1,0 +1,12 @@
+.container-fluid{
+    background: #e8e8e8;
+    height: 50px;
+    text-align: center;
+    align-items: center; 
+  }
+
+  footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+ }

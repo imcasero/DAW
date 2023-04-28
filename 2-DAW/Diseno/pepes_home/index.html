@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--Favicon-->
+    <link rel="icon" href="./media/img/icon/IconoRamen.ico" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepe's Home</title>
+    <!--Links necesarios-->
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="./src/css/styleGeneral.css" />
+    <!--Bootstrap y jquery-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider();
+      });
+    </script>
+  </head>
+  <body class="text-center" style="background-color: rgba(0, 0, 0, 0.1)">
+    <div>
+      <!--Header-->
+      <header class="container-fluid p-2">
+        <img src=".\Media\img\icon\IconoRamen.png" />
+        <h1 class="text-center mb-1" style="font-family: shojumaru">
+          Pepe's Home
+        </h1>
+      </header>
+      <!--Barra de navegación-->
+      <nav class="container-fluid navbar-expand-lg text-center bg-dark sticky-top">
+        <ul>
+          <li class="col-2 text-center">
+            <a href="./src/html/registro.html">Register</a>
+          </li>
+          <li class="col-2 text-center">
+            <select name="select" class="form-select" id="select" onchange="location = this.value;">
+              <option value="#">Letter</option>
+              <option value="./src/html/carta_admin.html">Platos</option>
+              <option value="./src/html/alergenos.html">Alergenos</option>
+              <option value="./src/html/menus.html">Menus</option>
+            </select>
+        </li>
+          <li class="col-2 text-center"><a href="./src/html/reservas_admin.html">Reserve</a></li>
+          <li class="col-2 text-center"><a href="ofertas.html">Offers!!</a></li>
+        </ul>
+      </nav>
+      <!--Div slider platos recomendados-->
+      <div class="container-fluid">
+        <h3 class="text-center">OUR RECOMMENDED DISHES</h3>
+        <div class="slider">
+          <div>
+            <img
+              src=".\Media\img\img\plato2.jpg"
+              class="img-fluid rounded"
+              width="30%"
+              height="550px"
+            />
+            <img
+              src=".\Media\img\img\plato3.jpg"
+              class="img-fluid rounded"
+              width="30%"
+              height="550px"
+            />
+            <img
+              src=".\Media\img\img\plato4.jpg"
+              class="img-fluid rounded"
+              width="30%"
+              height="550px"
+            />
+          </div>
+          <div>
+            <img
+              src=".\Media\img\img\plato2.jpg"
+              class="img-fluid rounded"
+              s
+              width="30%"
+              height="550px"
+            />
+            <img
+              src=".\Media\img\img\plato6.jpg"
+              class="img-fluid rounded"
+              s
+              width="30%"
+              height="550px"
+            />
+            <img
+              src=".\Media\img\img\plato7.jpg"
+              class="img-fluid rounded"
+              s
+              width="30%"
+              height="550px"
+            />
+          </div>
+          <div>
+            <img
+              src=".\Media\img\img\plato1.jpg"
+              class="img-fluid rounded mt-1"
+              width="30%"
+              height="550px"
+            />
+            <img
+              src=".\Media\img\img\plato4.jpg"
+              class="img-fluid rounded mt-1"
+              width="30%"
+              height="550px"
+            />
+            <img
+              src=".\Media\img\img\plato7.jpg"
+              class="img-fluid rounded mt-1"
+              width="30%"
+              height="550px"
+            />
+          </div>
+        </div>
+      </div>
+      <!--Div platos de la semana(no slider)-->
+      <div class="container-fluid mb-5">
+        <h3 class="text-center">DISH OF THE WEEK</h3>
+        <div class="container mb-5">
+          <img
+            src=".\Media\img\img\plato1.jpg"
+            class="img-fluid rounded"
+            width="30%"
+          />
+          <img
+            src=".\Media\img\img\plato6.jpg"
+            class="img-fluid rounded"
+            width="30%"
+          />
+          <img
+            src=".\Media\img\img\plato7.jpg"
+            class="img-fluid rounded"
+            width="30%"
+          />
+        </div>
+      </div>
+      <!--Sobre nosotros-->
+      <div class="container w-75 mb-5" id="nosotros">
+        <h3 
+          class="text-center mt-3 mb-4" 
+          style="font-family: shojumaru;">
+            About us
+        </h3>
+        <div class="nosotros mb-5">
+          <p class="mb-3 m-1">
+            This name reflects the desire of the owners of the restaurant, 
+            a Korean couple who moved to Spain back in 1989, to offer only 
+            the most delicious Korean cuisine to their guests. 
+            Now over 70 years old, they have finally been able to make their dream of 
+            running a restaurant come true in order to offer their guests 
+            the flavors of Korean cuisine from Jeolla Do province, 
+            the quintessential culinary province of Korea.<br><b style="font-family: shojumaru;">Bae Pepe</b> 
+          </p>
+          <img  
+            class=" rounded-circle" 
+            src="./media/img/img/pepe.png" 
+          >
+        </div>
+        <h3 
+          class="text-center mt-5 mb-3" 
+          style="font-family: shojumaru;">
+            Our kitchen
+        </h3>
+        <div class="nosotros mb-3">
+          <p class="mb-4 m1">
+            Korean cuisine is different from Chinese cuisine and Japanese cuisine, 
+            better known in our country, and although it has common roots and 
+            characteristics, such as its use of soybeans and spices, it is quite 
+            different from them in ingredients, textures and flavors.<br>
+            This also highlights the wok (roast) kitchen characterized by its 
+            curious kitchen utensils that allow the roast to be completed 
+            on your plate and maintain the maximum possible flavor.
+          </p>
+          <video width="100%" height="400px" autoplay="autoplay" muted ="muted"loop >
+            <source src=".\media\video\wok.mp4">
+          </video>
+        </div>
+      
+    </div>
+    <!--Div apollo-->
+    <div style="height: 10px"></div>
+    <!--Foteer-->
+    <footer class="container-fluid mt-2 text-center text-lg-end">
+      <div class="text-center p-3">
+        © 2022 Copyright: Pepe's House, Inc. All rights reserved
+      </div>
+    </footer>
+  </body>
+  <!--Script bootstrap-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>

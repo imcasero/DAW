@@ -1,0 +1,20 @@
+body,html {
+	font-family:verdana, arial, helvetica, sans-serif;
+	color:#000;
+  font-size: .9em;
+}
+
+
+#tabla {
+  border-collapse: collapse; 
+  width:80%;
+  background: #F7EEDD;
+}
+
+#tabla td {border:1px solid #705D3B;}
+
+#tabla img {cursor:pointer}
+
+.cabeza, .orden {background: #E7CC99;}
+
+.orden {width:5%}

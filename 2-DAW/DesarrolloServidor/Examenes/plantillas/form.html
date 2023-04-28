@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla formulario</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="form.php" method="post" enctype="multipart/form-data">
+        <!-- <label for="select-input">Categoria</label>
+      <select name="select-input" id="select-input">
+        <option value="1">select-input</option>
+        <option value="2">select-input</option>
+        <option value="3">select-input</option>
+        <option value="4">select-input</option>
+      </select> -->
+
+        <label for="text-input">Text Input:</label>
+        <input type="text" id="text-input" name="text-input" /><br /><br />
+
+        <label for="password-input">Password Input:</label>
+        <input
+          type="password"
+          id="password-input"
+          name="password-input"
+        /><br /><br />
+
+        <label for="file-input">File Input:</label>
+        <input type="file" id="file-input" name="file-input" /><br /><br />
+
+        <label for="checkbox-input">Checkbox Input:</label>
+        <input
+          type="checkbox"
+          id="checkbox-input"
+          name="checkbox-input"
+        /><br /><br />
+
+        <label for="radio-input">Radio Input:</label>
+        <input type="radio" id="radio-input" name="radio-input" value="1" />
+        <input
+          type="radio"
+          name="radio-input"
+          id="radio-input"
+          value="2"
+        /><br /><br />
+
+        <label for="date-input">Date Input:</label>
+        <input type="date" id="date-input" name="date-input" /><br /><br />
+
+        <label for="textarea">Textarea:</label>
+        <textarea id="textarea" name="textarea"></textarea><br /><br />
+
+        <input type="submit" value="Submit" name="submit" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<?php
+
+include 'cabecera.php';
+ header("Access-Control-Allow-Origin: *");
+if (!$db) 
+{
+echo "No pudo conectarse a la BD: " . mysql_error();
+exit();
+}
+	$aula_a_leer = $_POST['aula'];
+	$consulta = "SELECT * FROM reservas_anuales WHERE aula_anual= '$aula_a_leer'";
+	$result = mysql_query($consulta,$db);
+	if (!$result) 
+			{
+				echo ("Error en la consulta".$result);
+			} 
+			else 
+			{
+				$cadena="";
+				while ($valor = mysql_fetch_array($result))
+				{
+					$ver_dias_reservas = $valor['dias_reserva_anual'];
+			
+				}
+				if ($ver_dias_reservas!="")
+				{
+					$campos_reserva_anual =explode(",",$ver_dias_reservas);
+					for($i=0;$i<count($campos_reserva_anual);$i++)
+						{
+							$campos= explode("-",$campos_reserva_anual[$i]);
+							$cadena .= ($campos[0]);
+							$consulta = "SELECT * FROM profesores WHERE ds_p = '$campos[1]'";
+							$result = mysql_query($consulta,$db);
+							if (!$result) 
+								{
+								echo ("sin reservas del año");
+								}
+							else 
+								{
+									while ($valor = mysql_fetch_array($result))
+									{
+									$cadena .= ';'.($valor['nombre_p']).';'.($valor['ds_p']).",";	
+									}
+								}
+						}
+					
+				}
+				
+				
+			}
+print ($cadena);		
+mysql_close($db);
+?> 

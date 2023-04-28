@@ -1,0 +1,14 @@
+table,td {
+    border: 1px solid black;
+	min-width:50px;
+	min-height:50px;
+}
+
+.imagen {
+    /* background: #b3ccff; */
+	background-image: url("./imagenes/aniadir_32x32.png");
+	background-repeat:no-repeat;
+	background-size: 30%;
+	background-position: 50% 50%;
+
+}

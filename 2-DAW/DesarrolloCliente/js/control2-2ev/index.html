@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla Diego Casero</title>
+    <style>
+      :root {
+        --blanco: #fffffa;
+        --negro: #000;
+        --pur: #7d53de;
+      }
+
+      #contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      #tabla {
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background-color: var(--blanco);
+      }
+
+      #tabla td {
+        transition: 0.5s;
+        min-width: 60px;
+        min-height: 60px;
+        border: 1px solid var(--negro);
+        padding: 10px;
+        text-align: center;
+        background-color: var(--blanco);
+        color: var(--negro);
+        cursor: pointer;
+      }
+      #tabla td:hover {
+        transition: 0.5s;
+        min-width: 60px;
+        min-height: 60px;
+        border: 1px solid var(--negro);
+        padding: 10px;
+        text-align: center;
+        background-color: var(--pur);
+        color: var(--blanco);
+        cursor: pointer;
+      }
+
+      #boton {
+        background-color: var(--pur);
+        color: var(--blanco);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.5s;
+      }
+      #boton:hover {
+        transition: 0.5s;
+        background-color: var(--blanco);
+        color: var(--pur);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        margin: 10px;
+        border: 1px solid var(--pur);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenedor"></div>
+  </body>
+  <script src="script.js"></script>
+</html>

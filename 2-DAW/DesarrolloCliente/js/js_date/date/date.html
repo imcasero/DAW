@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<TITLE>MI PÁGINA</TITLE>
+<SCRIPT>
+var fecha = "La fecha actual es ";
+var nuevafecha = new Date();
+// tomamos del sistema la fecha por partes
+// programa para ver la fecha de hoy
+fecha += nuevafecha.getMonth() +"/";
+fecha += nuevafecha.getDate() + "/";
+fecha += nuevafecha.getFullYear();
+document.write(nuevafecha + "<BR>");
+
+
+
+//una de sus funciones
+var fecha1 = new Date();
+fecha1 = Date.now();
+document.write("Numero de milisegundos desde 1-1-1970 hasta hoy " + fecha1 + "<BR>");
+//veamos cuanto tiempo tardas en introducir tu nombre por teclado
+var f_inicio = new Date();
+var f_final = new Date();
+var f_inicio = Date.now();
+var nombre = prompt("Cual es tu nombre?", "");
+var f_final = Date.now();
+var lapso = (f_final - f_inicio) / 1000;
+document.write(nombre + " Has tardado " + lapso + " segundos en teclar tu nombre");
+//ahora utilizamos la funcion parse para obtener los milisegundos de una fecha concreta
+var fecha2 = "";
+var nuevafecha2 = new Date();
+// con las siguientes instrucciones analizamos los milisegundos desde una fecha ya
+// introducida hasta la medianoche del 1 del 1 de 1970
+fecha2 += nuevafecha2.getMonth() + "/";
+fecha2 += nuevafecha2.getDate() + "/";
+fecha2 += nuevafecha2.getFullYear() -10;
+var mili = Date.parse(fecha2);
+document.write("La fecha desde hoy hace 10 años es " + fecha2 + " y han pasado " + mili + " milisegundos" + "<BR>");
+//ahora utilizamos varios meetodos
+var fecha3 = new Date()
+// con las siguientes instrucciones analizamos los milisegundos desde una fecha ya
+// introducida hasta la medianoche del 1 del 1 de 1970
+document.write("El día de la semana es " + fecha3.getDate() + "<BR>");
+document.write("El mes es " + fecha3.getMonth() + "<BR>");
+document.write("El año menos 1900 es  " + fecha3.getYear() + "<BR>");
+document.write("El año completo es " + fecha3.getFullYear() + "<BR>");
+document.write("El dia UTC es " + fecha3.getUTCDate() + "<BR>");
+document.write("La fecha completa ISO es " + fecha3.toISOString() + "<BR>");
+</SCRIPT>
+</HEAD>
+<BODY>
+</BODY>
+</HTML>

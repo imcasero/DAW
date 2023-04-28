@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja12</title>
+</head>
+<body>
+    <form action="validacion.php" enctype="multipart/form-data" method="post">
+
+        Texto : <input type="text" name="text" ></br>
+        Contraseña : <input type="password" name="pass" ></br>
+
+        Genero : </br>
+
+        <input type="radio" name="radio" value="hombre">Hombre</br>
+        <input type="radio" name="radio" value="mujer">mujer</br>
+
+        fecha : <input type="text" name="fecha" ></br>
+        Pais : <select name="pais" >
+            <option value="espana">España</option>
+            <option value="inglaterra">Inglaterra</option>
+            <option value="francia">Francia</option>
+        </select></br>
+        Terminos  : <input type="checkbox" name="check" value="ok"></br>
+        Comentarios : </br><textarea name="comentarios" cols="30" rows="10"></textarea></br>
+        foto : <input type="file" name="fichero" ></br>
+
+        <button type="submit">Enviar</button>
+        
+    </form>
+    
+</body>
+</html>

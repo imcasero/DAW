@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Tabla Dom</title>
+    <style>
+    table{
+        border: 1px solid rgb(0, 139, 128);
+        border-radius: 10px;  
+    }
+    td{
+        border: 1px solid rgb(0, 139, 128);
+        padding: 25px; 
+    }
+    </style>
+</head>
+<body>
+<script>
+    var table = document.createElement('table');
+	table.id="tabla";
+    var elements = ['valor1', 'valor2', 'valor3', 'valor2'];    document.body.appendChild(table);
+    var content = new Array(8);
+    var cont = 0;
+    for(var i=0; i<content;i++){
+        content[i] = new Array(8);
+    }           
+
+    for(var j=0; j<content.length;j++)
+	{
+        var fila = document.createElement('tr');
+        fila.id=j;
+        
+        for(var k=0; k<8;k++)
+		{
+            var td = document.createElement('td');
+            td.id=j+'-'+k;
+            var random= elements[Math.round(Math.random() * 64)];
+            if(typeof(random)!=='undefined' && cont<4){
+                td.innerHTML = random;
+                //cont++;
+            }
+            fila.appendChild(td);
+        }
+		table.appendChild(fila);
+    }
+	
+
+	
+	var div_dibujo = document.createElement('div');
+	div_dibujo.appendChild(table);
+	document.body.appendChild(div_dibujo)
+	
+	
+	
+	
+
+	<!-- for (i=0;i<15;i++) -->
+	<!-- { -->
+		<!-- var parrafo = document.createElement("p"); -->
+		<!-- var contenido = document.createTextNode("Hola Mundo!"+i); -->
+		<!-- parrafo.appendChild(contenido); -->
+		<!-- document.body.appendChild(parrafo); -->
+	<!-- } -->
+	
+	
+	<!-- var array_parrafos = document.getElementsByTagName("p"); -->
+	
+	<!-- console.log (" el array " + array_parrafos[9].innerHTML); -->
+	
+	
+	
+</script>
+</body>
+</html>

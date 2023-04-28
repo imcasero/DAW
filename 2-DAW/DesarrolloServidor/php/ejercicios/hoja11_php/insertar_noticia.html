@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insertar noticias</title>
+    <style>
+      * {
+        font-family: Helvetica, sans-serif;
+      }
+      .contenedor {
+        background-color: #dddddd;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 60%;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 50px;
+        text-align: left;
+      }
+
+      form {
+        padding: 20px;
+        background-color: #f2f2f2;
+      }
+      p {
+        font-size: 11px;
+      }
+      label,
+      input[type="text"],
+      textarea,
+      select {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      textarea {
+        padding: 5px;
+        width: 100%;
+      }
+
+      select {
+        width: 100%;
+        padding: 5px;
+      }
+      .error {
+        color: red;
+      }
+      button[type="submit"] {
+        transition: 0.5s;
+        background-color: #4caf50;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 20px;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        transition: 0.5s;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 20px;
+        color: #4caf50;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <form action="insercion.php" method="post">
+        <h1>Inserte noticia</h1>
+        <p>Los campos con * son obligatorios</p>
+        <label for="titulo">Titulo *: </label>
+        <input type="text" name="titulo" /> <br />
+        <label for="descrip">Descripcion *: </label>
+        <textarea name="descrip" cols="30" rows="10"></textarea><br />
+        <label for="cat">Categoria :</label>
+        <select name="cat">
+          <option value="ofertas">ofertas</option>
+          <option value="costas">costas</option>
+          <option value="promociones">promociones</option></select
+        ><br />
+        <label for="imagen">Imagen</label>
+        <input type="file" name="imagen" /><br /><br />
+        <button type="submit">Insertar</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  align-items: center;
+}
+img {
+  max-width: 100px;
+  max-height: 100px;
+}
+body {
+  text-align: center;
+}
