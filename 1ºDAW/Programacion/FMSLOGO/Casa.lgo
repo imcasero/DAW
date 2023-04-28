@@ -1,0 +1,66 @@
+para casa :lado
+	repeat 4[fd :lado right 90] ;cuadrado principal
+		fd :lado
+		right 30
+	repeat 3[fd :lado right 120] ;tejado
+		right 150
+		fd :lado
+		left 90
+		fd :lado /3
+		left 90
+	repeat 3[ fd :lado /3 right 90] ; puerta
+		fd :lado /3 *2
+		right 90
+		
+		;HASTA AQUI REALIZO LA FIGURA DE LA CASA
+		
+		penup
+
+			fd :lado /2 right 90 fd :lado /2
+
+		pendown;REPOSICIONO PARA PODER COLOREAR
+		
+		poncolorrelleno [144 213 216]
+		fill
+
+		penup 
+		
+			 right 90 fd :lado /3 
+
+		pendown;REPOSICIONO PARA PODER COLOREAR
+
+		poncolorrelleno [180 141 67]
+		fill
+
+		penup
+		
+			right 180 fd :lado
+		pendown;REPOSICIONO PARA PODER COLOREAR
+		
+		poncolorrelleno[251 70 11 ]
+		fill
+
+		penup
+
+			home
+			
+			fd (:lado /8) *7 right 90 
+			fd :lado /8
+		pendown
+			repeat 4[fd :lado /4
+			right 90]; creo la ventana
+
+		penup 
+
+			fd 1 right 90 fd 1
+
+		pendown ;REPOSICIONO PARA PODER COLOREAR
+
+			poncolorrelleno[255 255 255]
+			fill
+
+		penup home ;final
+			
+			
+fin	
+

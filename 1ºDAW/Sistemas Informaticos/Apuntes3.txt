@@ -1,0 +1,290 @@
+	18/2/22
+Diferencias entre wan xamp y lamp-->BUSCAR
+comando net --> BUSCAR
+net start y net stop para parar o ejecutar un servicio---
+Spooler = cola de impresión(primero en llegar primero en salir)
+conexion ssh-->BUSCAR
+PID proces identification
+PPID padre
+shell --> diferentes consolas , muchos tipos , 
+cada uno tiene una funcionalidad
+Bash --> tipo de consola
+Un proceso es un programa en ejecucion
+Los servicios suelen ser de usuario o de sistema
+sistemas--> esta todo el rato
+usuario --> hasta que no lo decidas
+taskkill para matar servicio en windows , en linux kill ----
+ssh para conectarte de forma remota atraves del puerto 22
+	21/2/22
+Antes eran paralelas o seria ahora son usb
+dispositivos>impresoras
+imprimes creando un pdf
+One note impresoras de sistema
+Para eliminar clic derecho quitar
+Para instalar lo prprimero que hace es buscar una impresora 
+en red
+Se pudee buscar impresora por otros metodos como paralelo o 
+incluso por AD(directorio activo)
+Se le llaman objetos a los elementos de AD
+Se puede seleccionar una impresora compartida por nombre o ruta
+Cuado se refiere a cola es fifo
+otros metodos son TCP/IP red o de manera local
+Puertos ltp(serie(9 pines macho) y paralelo(25 hembra))
+centrolings-->paralelo rs232-->serieLos drivers de impresora 
+se utilizan para que pueda ser reconozido por el OS
+HAL hardware abstrancion Layer es una capa entre hardware y 
+software
+y hace que el hardware se pueda utilizar de igual forma en los
+OS
+Los drivers se materializan en archivos de sistemas .sys y .dll
+puedes conservar los documentos despues de imprimir cuando 
+instalas Los drivers se instalan en cada equipo
+Las carpetas compartidas que acaban en $ es porque 
+estan ocultas
+
+Impresora TCP/IP
+3 tipos de impresoras:
+Compartidas: impresoras locales de una maquina que s
+e comparten para que el resto de los usuarios puedan usarla.
+En red: esta pinchada en una red, tiene una IP.
+Local: impresora que .
+
+Proxys permite que todo el trafico que hay de una red a otra , 
+sea canalizado a traves de este , todas las peticiones 
+salen por el proxy
+Se garantiza el acceso a internet controlado
+La diferencia es que registra monitoriza canaliza cualquier 
+acceso que se hace por el , comparado
+con las puertas de enlace
+Se establecen listas (blanca y negra)
+Tambien establece cuotas (los antiguos cibers)
+3128 es puerto estandar de proxys
+
+Los parches o actualizacion ed microsoft viene incluidas 
+en los parches KBxxxxx
+Mejoras criticas suelen ser agujeros de seguridad
+Windows esta en C c# y .net
+Las librerias contienen todos los recursos necesarios
+Windows catalogo (estan todos los parches)
+
+Ubuntu : con windows podemos particionar 
+los discos de determinada forma, antes durante o despues
+El concepto de disco duro en linux y windows es el mismo
+en windows se llaman disco 0 disco 1
+en linux sda sdb
+sda 1 sda2 esos serian particiones
+En windwos tendremos unidades logicas por disco
+En cambio en linux solo 1 por muchos discos
+existe un directorio raiz en el que cuelgan sda y sdb
+En linux la carpeta media es para los ubs portables
+En windows decidimos cual es la particion primaria 
+y activa en linux igual pero ahi se cuelga todo
+
+rendimiento opciones avanzadas > ahi podemos 
+aumentar la zona de paginacción
+Windows , a diferencia de linux, si reserva un espacio en 
+el disco
+En linux el SO y el hardw se comunican a traves de archivos 
+especiales
+
+discos mbr registro de arranque maestro
+discos gpt tabla de particionados GUID (Investigar diferencias)
+
+Windows PE es el portable d windows (en memoria) o cd live
+
+No es obligatorio hacer particion de swap pero puede tener caidas
+de sistemas
+gparted es un sistemas de particiones que luego hay que 
+instalarlo manualmente
+
+host y host name (Linux)
+
+Samba permite la compatibildiad entre windwos y linux , cifs es 
+un sistema de archivo para que estos puedan comaprtir elementos
+Smaba se montara en dos niveles , server y cliente
+ apt = instalador de paquete
+ sudo = permisos
+ install opcion de instalador
+ luego el paquete que se desea instalar
+
+paquetes con extension .deb para debian 
+paquetes con extension .rpm para red hat -- Yum
+yum es el instalador de red hat
+sudo yum en red hat
+sudo apt en debian
+apt-repositorio () donde estan guardados los paquetes
+el instalador de paquetes debain por defecto es el dpks
+dpkg es el que lo installa el get es traer
+el dpkg solo puede usarse por un proceso
+-----------------------------------------------------------------
+
+COMANDO sudo apt-get update (actualiza)
+	ps -Al(Lista los procesos)
+	sudo apt-get install samba (Insatalamos samba)
+	sudo kill -9 proceso (mata procesos el -9  es para que se
+lo cargue si o si)
+	sudo systemctl status smbd (para ver si un servicio
+esta en proceso)
+	sudo systemctl stop proceso (para el proceso)
+	sudo systemctl start proceso (para inciar el proceso)
+	sudo nano ruta (es el editor de texto plano 
+asi editamos los ficheros)
+	sudo cp ruta (para hacer una copia)
+	man comando (para sacar el manual)
+	comando --help (saca diferentes atributos)
+	pwd ruta actual
+	rmdir remove directori
+	mkdir crear directorio
+	cp copiar
+	rm delete
+	chmod para modificar permisos
+	umask (restricciones de acceso de sistemas)
+	ls -la muestra permisos
+	gedit (editor de texto igual que nano)
+	ll == ls -la
+	alien permite convertir rpm en dev
+	
+
+-----------------------------------------------------------------
+Daemon son procesos en background de linux.
+
+print$ donde se guardan los drivers para las impresoras(Windwos)
+
+Apt se utiliza para el entorno consola , recuperar 
+paquetes de repositorios utilizando
+el dpk como herramienta de instalacion o desistalacion , 
+el apt tiene distribuciones distintas 
+como el install , el remove etc
+
+un archivo puede tener permisos de rwx(pertenecen al usr creador)
+	rwx(El grupo de usuario principal 
+al que pertenece el usuario) 
+	rwx (para el resto de usuario)
+
+r leer
+w escribir
+x ejecutar
+
+por cada permiso activo se pone un bit activo y se pasa a decimal
+asi sabemos los permisos de u (user) g(group) o(others)
+
+111 101 100
+7   5   4
+chmod 754 
+que significa rwx r-x r-- 
+
+Los permisos maximos para archivos son 666 para directorios 777
+
+Permisos de compartición se dan a la hora de compartir los permi-
+sos de seguridad pueden limitar mas al usuario aunque tenga
+permisos de comparticion
+
+La umask por defecto depende por cada version de ubuntu
+Antes era 022 y ahora 002 solo para directorios
+
+login def para cambiar el umask
+
+Los permisos 777/666 en directorios y archivos no son validas
+
+la tuberia es la forma de canalizar el resultado 
+de un comando a otro
+
+31/3/22
+fd : floppy disk disquete
+el proceso por el cual un dispositivo de almacenamiento externo se añade
+, se conoce con el nombre de mount o montaje
+En los sitemas ext4 , añadieron el jornualy, 
+Es un sistema que permite automaticamente y cada cierto tiempo
+segun los reinicios, hacer comprobaciones de disco 
+y recuperar los sistemas defectuosos.
+En windows esto se hace por el archivo log. que se forma al apagar 
+correctamente
+mount como comando permite añadir al sistema principal de archivos 
+otros dispositivos de almacenamiento
+Se enlaza en la carpeta/media
+Cunado hacemos un mount de un recurso compartido se utiliza el sistema
+de archivos CIFS
+GPARTED es el equivalente a pw en linux
+
+Nautilus linux (BUSCAR)
+
+El fichero hosts de linux esta en etc\host y hostname
+
+para mapear wn linux 
+sudo mount -t cifs //.... -o user=...
+para instalar las cifs
+sudo apt install cifs-utils
+
+1/4/22
+
+dpkg es el instalador de paquetes
+
+INSTALADORES : dpkg (apt-get) aptitude yum
+
+Puedes instalar paquetes .deb o .net
+atraves de Alien puedes pasar un rpm  a deb
+aptitude tambien es otro instalador
+desde el entorno grafico con el csu
+
+source.list ahi se encuentran los repositorios, los represitorios pueden ser
+oficiales o no oficiaes
+existen repositorios Canonical (main)
+	por la comunidad(universe)
+	para dispositivos(restricted)
+
+El comando tar permite empaquetar archivos, que no es lo mismo que comprimir
+.tar es empaqueta .gz comprimido
+
+tar -c: create
+tar -x: se utiliza para extraer
+tar -v: te permite ver lo que sucede
+tar -f: indica que es file
+tar -czvf: te empaca y ademas comprime con gzip
+ej: sudo tar -cvf nuevo.tar *.txt para empaqueta todos los txt
+ej: sudo tar -xvf nuevo.tar para extraer
+libro pagina 258
+
+gzip compresion, este si comprime, no empaqueta
+sudo gzip nuevo.tar --> nos daria un archivo nuevo.tar.gz
+ gunzip para descomprimir
+
+tema 13 pt5
+COMANDOS DE USUARIOS LINUX
+-adduser
+-useradd
+-deluser
+-userdel
+-moduser
+-usermod
+COMANDO WINDOWS CREAR USUARIO:
+
+shador se guarda la informacion de los usuarios
+
+
+fecha unix : 1 de enero de 1970 de UTC es la fecha de referencia para todos
+los sistemas, el tiempo unix 
+
+fichero group shadow y paswd
+
+Trabajos por parejas sobre terminal server cliente/servidor (windows Linux)
+				vlc
+ teamviwer o ()	remote desktop chrome
+				copias de seguridad con mmcrium
+				copias de seguridad clonezilla en linux
+15 min
+Comandos de gestion de politicas de contraseñas-- INVESTIGAR
+
+PASWD y CHANGE para cuestiones relaticvas a contraseñas
+
+grafico de ficheros shadow , paswd y group
+
+Archivos de impresora en linux son: ppd postscript printer description
+Las impresoras ipp que sonn por internet.
+
+cups command user printer servicio (sale como impresora) , es un 
+sistema de mpresion mdoular para sistemas opertaivos de tipo unix
+que permite que un computador actue como servidor de impresion
+
+ Proxy en Linux: para canalizar el trafico red> configuracion de red > proxy de la red
+
+(manual) ignorar anfitriones : si quieres acceder a localhost pasa del proxy

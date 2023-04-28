@@ -1,0 +1,27 @@
+to area_cuadrado :lado
+
+	make "area :lado * :lado
+	
+	output :area
+
+end
+
+to area_rectangulo :base :altura
+
+	make "area :base * :altura
+	
+	output :area
+
+end
+
+para hipotenusa :cateto1 :cateto2
+
+	make "resul rc( (:cateto1 * :cateto1) + (:cateto2 * :cateto2) )
+
+	output :resul ;devuelve la hipotenusa
+fin
+
+haz "area 15000
+haz "area_finca 55000
+haz "potencia 1024
+haz "resul 12.2065556157337

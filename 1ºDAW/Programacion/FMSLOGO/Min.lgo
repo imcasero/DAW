@@ -1,0 +1,13 @@
+para min :num1 :num2
+
+	ifelse :num1 > :num2 [
+				make "menor :num2
+][
+				make "menor :num1
+]
+	
+	output :menor
+
+fin
+
+haz "menor 9

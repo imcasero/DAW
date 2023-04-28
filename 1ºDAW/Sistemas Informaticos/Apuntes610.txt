@@ -1,0 +1,152 @@
+REQUISITPS RED
+
+	- Que cada equipo tenga nombre difernete
+	- Que tengan el mismo rango de ip pero difernetes ip
+	- Que tengan la misma marcara de red
+	- que pertenezcan al mismo grupo de trabajo o dominio
+	- que esten habilitadas las redes compartidas y recursos
+	- que el administrador del equipo este activo y con contraseña.
+
+T6
+BCEDIT
+SHIFT MAS APAGAR arranque selectivo en win10
+
+en otros sistemas es f8
+
+Modo seguro y recuperacion.
+msconfig
+entorno de arrcanqie selectivo, deshabilitado en w10 ( apagar y shift) en los demas f8
+en consola : bcdedit bootmenupolicy estandar x legacy
+bcdedit /set {Default} bootmenupolicy legacy. 
+
+La ultima direccion de red es la direccion de broadcast que es el punto comun donde todos los equipos de la red se reconocen entre ellos 
+
+15/11
+
+diferencia entre dominio y grupo de trabajo para decantarse por uno u otro la cantidad de equipos es crucial 
+En el dominio estan gestionado en un ordenador principal(No se usan usuario de trabajo).
+Para decantarte por este tipo de directorio activo se utiliza cuando hay un mayor numero de equipos
+Los grupos de trabajo es una gestion descentralizada.
+
+Los ficheros bat sirven para ejecutar instrucciones de consola una tras otra.
+instalar.bat en el server , con un parametro que cuando un usuario entre en el login se ejecute(un script de inicio de sesion)
+
+Una tarea programda es un gestor que indica a que hora y que dia puede ejecutar un programa concreto
+
+Un archivo csv es un archivo de excel formato texto
+
+Format para dar sistema de archivos
+
+No se alamcenan datos en el disco si no en la particion
+
+Un archivo es un alamcen de infromacion normalmente homogenea, se pueden crear borrar modificar, etc. Sus caracteristicas son el nombre
+la extension fecha de creacion hora de grabacion etc.
+Un directorio, es un archivo que almacenan otros archivos. tiene las mismas caracteristicas que un archivo menos la extension
+Las extensiones determinan con que se va a abrir el archivo
+
+18/11
+
+Windows hay dos cmd o command.com y la powershell
+Cualquier consola consta de la interfaz y el prompt del sistema
+en el prompt esta la ruta absoluta del usuario que a iniciado sesion
+termina el # es un usuario normal y corriente y si es $ es root en linux
+como administrador cambia en windows en uno la carpteta personal y en administrador la carpeta windows system32
+para la ayuda del comando comando /?
+El entorno comando sirve para administrar archivos directorios discos y sistemas
+
+Nunca se borra los ficheros, se marcan como borrados y luego se sobreescriben
+concatenacion de archivos
+
+xcopy para copiar estructuras de directorios completos
+
+Existen dos tipos de comandos, los internos y los externos,
+los internos se cargan en memoria ram a la vez que el so los externos son programas que se representas con extension exe o com
+
+19/11
+
+Todos los so operativos manejan atributos
+
+FAT
+A ALAMACENAMIENTO 
+R LECTURA
+S SISTEMA
+H OCULTO
+
+linux
+
+rwx 
+chmod
+umask
+
+26/11
+los equipos solo pueden pertenecer o a un dodminio o un grupo de trabajo
+Los scipt de inicio de sesion son unos archivos que ejecutan unas ordenes en el inicio de sesion.
+en windows active directory y en liux ldp protocolo liegero de acceso a direcctorio
+Cada cr es un registro de csv    
+Las variables de entorno almacenan infromacion relevante del sistema
+set crea y muestra todas las variables 
+
+02/12
+Los ficheros bat solo guardan infromacion en timepo de ejecucion
+Call solo para llamar a otros .bat
+
+10/12
+TCP/IP Son diferentes protocolos pero que se han unificado
+Tenemos direcciones publicas es decir ips que apuntan al exterior y ips internas dentro de la red local
+
+13/01/22
+eth 0 1 2 para redes en el mismo router
+21/1/22
+estudiar las topografias
+ethernet con IEEE 802.3
+elementos activos y pasivos en una red
+RDSI voz y datos
+802.11 Wifi
+Internet -- Arpanet(Buscar)
+Desmilitarizacion de la red electronica mundial 70Ñ80
+Se necesitaba un modem (Modulador de señal)
+Los ordenadores que trabajaban en bits se llamaban onda cuadrada(Grafica) es decir trabaja en binario
+modem pasa la onda cuadrada a onda redonda(grafica) , y viceversa
+modem de los años 80 maximo 28.8 KB
+RDSI red militar de servicios integrados(Internet + modem)
+El RDSI divide la señas
+RSI migro al ADSL(Siglas)
+POE el telefono tiene correcto sin luz porque ya tenia corriente, ahora ya va todo por router.
+topologias 10 , 100  y 1000
+ethernet caracteristicas 802.11 mas infromacion
+
+CHULETAS
+
+--TOPOLOGIAS
+
+Bus , su gran desventaja es que depende de cualqueir equipo que se encuentre en la linea.
+
+En linea
+
+Estrella
+
+Centralizada , su gran desventaja es que depende de la funcion del dispositivo central.
+
+Anillo
+
+Seire , su grand esventaja es que si se rompe una conexion individual el aillo queda afectado.
+
+--ESPECIFICACIONES ETHERNET
+--802.9 y 802.11
+
+
+examen
+-normativa ethernet 
+-tipos de cableado categorias.
+-power point 
+-pdfs
+-enrutamiento
+
+EXAMEN REDES.
+- Servidor wins
+- Fibra optica nada
+- nada de token rin
+- solo ethernet
+- 802.9 .11
+
+Verde naranja datos.azul voz , marron sin utlidad

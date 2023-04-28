@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diego Casero">
+    <meta name="description" content="Incidencia daw">
+
+    <link href="form.css" rel="stylesheet" type="text/css">
+
+    <title>Incidencia</title>
+</head>
+<body>
+    <form action="felicitacion.html" method="post">
+
+        <fieldset>
+            <legend>Parte de incidencia</legend>
+            <label for="usuario">usuario</label>
+            <input type="text" name="usuario" id="usuario" disabled><br>
+                    <br>
+            <label for="Indicador">Indique el numero de cliente: </label>
+            <input type="text" name="Indicador" id="Indicador" autofocus required><br>
+                    <br>
+            <label for="fecha">Fecha en la que se produjo la incidencia</label>
+            <input type="date" name="fecha" id="fecha"><br>
+                    <br>
+            <label for="urgencia">Grado de urgencia</label><br>
+            <input type="range"><br>
+                    <br>
+            <label for="Descripcion">Describa la incidencia</label><br>
+            <input type="textarea" name="Descripcion" id="Descripcion" maxlength="300" size="90"><br>
+                    <br>
+            <label for="telefono">Indique un numero de contacto</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="+34 XXX XX XX XX"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+                    <br>
+            <label for="email"> Indique un email</label><br>
+            <input type="email" name="email" id="email"><br>
+                    <br>
+                    <p>Indique el tipo de asistencia</p>
+
+            <input type="radio" id="Remota" name="asistencia" value="Remota">
+            <label for="Remota">Remota</label>
+        
+            <input type="radio" id="Presencial" name="asistencia" value="Presencial">
+            <label for="Presencial">Presencial</label><br>
+                    <br>
+            <label for="severidad">Indique el grado de severidad del problema(Sinedo 10 más grave)</label><br>
+            <input type="number" name="severidad" id="severidad" min="1" max="10"><br>
+                    <br>
+                    
+                    <input type="submit" name="felicitacion" id="felicitacion" value="Enviar parte">
+
+        </fieldset>
+
+    </form>
+</body>
+</html>

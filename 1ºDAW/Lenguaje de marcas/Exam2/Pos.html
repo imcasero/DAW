@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    h1{
+        text-align: center;
+    }
+    .contenedor{
+        position: relative;
+        margin: auto;
+        border: 1px solid red;
+        background-color: gainsboro;
+        z-index: -2;
+        width: 500px;
+        height: 500px;
+
+        }
+    .caja1{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        border: 1px solid blue;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        text-align: center;
+    }
+    .caja2{
+        position: absolute;
+        top: 90px;
+        left: 90px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid blueviolet;
+        background-color: yellow;
+        text-align: center;
+    }
+    .caja3{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid green;
+        background-color: brown;
+        text-align: center;
+
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio posicionamiento</h1>
+
+        <div class="contenedor" >
+
+            <div class="caja1" >
+                Caja 1
+            </div>
+
+            <div class="caja2" >
+                Caja 2
+            </div>
+
+            <div class="caja3">
+                Caja 3
+            </div>
+
+        </div>
+
+</body>
+</html>

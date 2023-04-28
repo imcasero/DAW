@@ -1,0 +1,7 @@
+Que caracter se utiliza para un salto de linea
+LF
+BR
+
+
+Nombre: 01000100 01101001 01100101 01100111 01101111
+Edad: 00110001 00110111

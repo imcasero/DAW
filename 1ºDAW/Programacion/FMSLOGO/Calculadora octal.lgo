@@ -1,0 +1,24 @@
+para octal
+
+	make "i readword
+	make "copia :i
+	make "contador 0
+	make "resultado 0
+
+	
+		while [:i <>0][
+			make "resto remainder :i 10
+			make "cifra :resto * power 8 :contador 
+			make "contador :contador + 1
+			make "resultado :resultado + :cifra 
+			make "i int :i /10
+]
+ output :resultado
+fin
+
+haz "cifra 8
+haz "contador 0
+haz "copia 9
+haz "i 9
+haz "resto 1
+haz "resultado 0

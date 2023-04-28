@@ -1,0 +1,12 @@
+to factorial 
+
+	make "numero readword
+	make "repeticion :numero
+
+	repeat :repeticion[ :numero *make "numero - 1 :numero ]
+	print :numero
+
+end
+
+Make "numero 3
+Make "repeticion 3

@@ -1,0 +1,41 @@
+Create database ReyesMagos
+	
+	Create table GrupoVecinos(
+		Nombre varchar(50) primary key,
+		Barrio verchar(50),
+		Nintegrantes tinyint,
+);
+	Create table Vecinos(
+		DNI varchar(11) primary key,
+		Nombre varchar(50),
+		Apellidos varchar(50),
+		ReyMago enum(MELCHOR, GASPAR, BALTASAR),
+		DNIVecinoCaptador varchar(11) NOT NULL,
+		GrupoVecinos varchar(50),
+
+			PRIMARY KEY( DNIVecinoCaptador) REFERENCES Vecinos(DNI)
+			PRIMARY KEY( DNIVecinoCaptador) REFERENCES Vecinos(DNI)
+			
+);
+	Create table Eventos(
+		FechaHora datetime,
+		Grupovecinos varchar(50),
+		ubicacion varchar(10),
+		
+			PRIMARY KEY (Fechahora, Grupovecinos),
+);
+	Create table Niños(
+		Codigo varchar(50) PRIMARY KEY,
+		Nombre varchar(10),
+		Direccion varchar(50),
+		EventoFechaHora datetime,
+		EventoGrupoVecinos varchar(50),
+		Regalo varchar(50),
+
+			Contraint fk_ne FOREIGN KEY (EventosFechaHora) reference Eventos(FechaHora)
+				ON DELETE NO ACTION TO UPDATE CASCADE
+			Contraint fk_ne FOREIGN KEY (EventoGrupoVecinos) reference Eventos(GrupoVecinos)
+				ON DELETE NO ACTION TO UPDATE CASCADE
+)
+
+	

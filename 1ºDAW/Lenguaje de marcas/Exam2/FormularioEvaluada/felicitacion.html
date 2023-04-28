@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diego Casero">
+    <meta name="description" content="Felicitaciones daw">
+    <title>Encuesta</title>
+
+    <link href="form.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+
+    function myFunction() {
+        window.alert("Gracias por su tiempo, su opnion es importante para nostros"); }
+
+    </script>
+
+</head>
+<body>
+    <h1>Gracias por confiar en nosotros</h1>
+    <p>Por favor rellene la siguiente encuesta para la posterior mejora del servicio</p>
+
+    <fieldset >
+        <legend>Encuesta</legend>
+
+            <label for="comodidad"> como evaluaria la comodidad del formulario </label><br>
+            <input type="range" name="comodidad" id="comodidad"><br>
+                        <br>
+            <label for="negativa"> En caso de que haya tenida una experiencia negativa describa aqui la razon</label><br>
+            <input type="text" name="negativa" id="negativa" maxlength="300" size="90"><br><br>
+                        <br>
+            <label for="Solucion"> Le ha resultado satisfactorio la infromacion recatada </label><br>
+            <input type="range" name="Solucion" id="Solucion"><br>
+                        <br>
+            
+                        <input type="submit" name="encuesta" id="encuesta" value="Enviar" onclick="myFunction()">
+    </fieldset>
+</body>
+</html>

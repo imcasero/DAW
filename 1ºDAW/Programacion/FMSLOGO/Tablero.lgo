@@ -1,0 +1,13 @@
+para cuadrado :lado
+	repeat 4[ fd :lado right 90]
+fin
+
+para fila :lado
+	repeat 8[cuadrado :lado right 90 fd :lado left 90]
+end
+
+para tablero :lado
+	repeat 7[fila :lado left 90 fd :lado*8 right 90 right 180 fd :lado right 180]
+	fila :lado
+end
+

@@ -1,0 +1,6 @@
+6.23.10.0/18bits
+
+pasos para sacar el id de red:
+
+ -1 direccion ip a binario y mascara de subred igual y aplicamos and
+ -2 para calcular el rango de host no tocamos los bits de mascara.

@@ -1,0 +1,88 @@
+para edad :edad
+
+	if :edad < 18 [ print [Eres menor]]
+	if :edad >= 18 [print [Eres mayor]]
+	if :edad >= 65 [print [Estas jubilado]]
+
+fin
+
+para fin0
+
+	make "numero readword
+	make "contador 0
+	make "sumatorio 0
+
+	while [:numero <> 0][
+		
+		make "contador :contador +1
+		make "sumatorio :sumatorio + :numero
+		print (FRASE [Has introducido ]:contador [ valores distintos de 0 ])
+		make "media :sumatorio /:contador
+		print (FRASE[El valor medio es :]:media)
+		make "numero readword]
+	
+	print [El valor es 0]
+			
+fin
+
+para mayor
+	
+	make "mayor 0	
+
+	repeat 10 [make "numero readword
+	
+		if :numero > :mayor[make "mayor :numero]
+
+		print :mayor]
+fin
+
+para media
+	
+	make "sumatorio 0
+	
+	repeat 10[
+		make "numero readword
+		make "sumatorio :sumatorio + :numero
+]
+	make "media :sumatorio /10
+	print(FRASE [La media es:] :media )
+
+fin
+
+para paroinpar
+	make "par 0
+	make "inpar 0
+
+	repeat 10 [make "numero readword
+			make "resto remainder :numero 2
+
+			ifelse :resto = 0 [make "par :par + 1]
+					[make "inpar :inpar + 1]
+]
+
+print (FRASE[par :]:par)
+print (FRASE[inpar :]:inpar)
+
+fin
+
+para suma10
+	
+	make "total 0
+	
+	repeat 10 [make "numero readword
+			
+		make "total :total + :numero ]
+	
+	print :total
+
+fin 
+
+haz "contador 5
+haz "inpar 1
+haz "mayor 7
+haz "media 4.2
+haz "numero 1
+haz "par 9
+haz "resto 0
+haz "sumatorio 21
+haz "total 55

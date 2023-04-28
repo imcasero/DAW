@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html><!-- Autor: Diego Casero Martín
+
+ Comentarios sobre mejoras introducidas al prototipo:
+
+- Mejorare la funcionalidad (Añadiendo mas funciones)
+- Mejorare la interfaz reordenando los botones
+- Mejorare la estetica
+
+ 
+ 
+-->
+<head>
+     
+  <style>
+     .dis {
+		text-align:right;
+	 }
+  </style>
+  </head>
+
+<body>
+
+ <input class="dis" type="text" id="display" value=""> <br>
+
+<button onclick="raizCuadrada()">✓</button>
+<button onclick="updateDisplay('/')">/</button>
+<button style="background-color:pink;" onclick="borrar()">C</button>
+
+<br>
+
+<button onclick="updateDisplay(7)">7</button>
+<button onclick="updateDisplay(8)">8</button>
+<button onclick="updateDisplay(9)">9</button>
+<button onclick="updateDisplay('*')">x</button>
+
+<br>
+
+<button onclick="updateDisplay(4)">4</button>
+<button onclick="updateDisplay(5)">5</button>
+<button onclick="updateDisplay(6)">6</button>
+<button onclick="updateDisplay('-')">-</button>
+
+<br>
+<button onclick="updateDisplay(1)">1</button>
+<button onclick="updateDisplay(2)">2</button>
+<button onclick="updateDisplay(3)">3</button>
+<button onclick="updateDisplay('+')">+</button>
+<br>
+<button onclick="updateDisplay('*-1')">+/-</button>
+<button onclick="updateDisplay(0)">0</button>
+<button onclick="updateDisplay('.')">,</button>
+<button onclick="calcular()">=</button>
+<br>
+
+
+
+
+
+<br><br>
+
+
+<script>
+
+function updateDisplay(num)
+{
+	var display= document.getElementById("display");
+	display.value = display.value + num;
+}
+function calcular() {
+	var display= document.getElementById("display");
+	var resul = eval(display.value);
+	display.value = resul;
+	
+}
+function borrar()
+{	
+	var display= document.getElementById("display");
+	display.value = "";
+	
+}
+function raizCuadrada()
+{
+  	var display=  document.getElementById("display");
+	var resul = eval(display.value);
+	display.value = Math.sqrt(resul);
+}
+</script>
+
+
+
+</body>
+</html>

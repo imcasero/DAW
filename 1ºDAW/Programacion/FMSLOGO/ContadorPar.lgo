@@ -1,0 +1,7 @@
+para par
+	make "pares 0
+	Repeat 20 [ make "pares :pares + 2
+			print :pares ]
+fin
+
+haz "pares 40

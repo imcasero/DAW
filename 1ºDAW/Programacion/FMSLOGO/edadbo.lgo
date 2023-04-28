@@ -1,0 +1,8 @@
+para edadb
+	make "edad readword
+		if :edad < 18 [print[MENOR DE 18]]
+		if :edad >= 65 [print[MAYOR O IGUAL A 65]]
+		if AND :edad >= 18 :edad < 65 [ print [EDAD LABORAL] ]
+fin
+
+haz "edad 60

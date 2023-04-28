@@ -1,0 +1,34 @@
+﻿to entrada 
+	print[¿Cuantas entradas quieres?]
+	make "num readword 
+
+	make "total 0
+	
+	 repeat :num [	print[Indique su edad]
+			
+			make "edad_usuario readword
+			make "coste ticket :edad_usuario
+			print :coste
+
+			make "total :total + :coste
+]
+
+	print (frase [el inporte total es]:total)
+end
+
+to ticket :edad
+
+	ifelse :edad >= 14 [ make "precio 10 ] [make "precio 5]
+
+	if :edad >= 65 [make "precio :precio * 0.75]
+
+	output :precio
+end
+
+haz "coste 10
+haz "edad 28
+haz "edad_usuario 20
+haz "num 3
+haz "num.entradas 3
+haz "precio 10
+haz "total 20

@@ -1,0 +1,11 @@
+-Crear conexion
+-Try catch
+-throw
+-Exception
+-Conection
+-Statement
+-PreparedStatement
+-setString()
+-executeUpdate()
+-executeQuery()
+-resulSet

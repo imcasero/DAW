@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario examen</title>
+</head>
+<body>
+    <form action="suscripciones.php" target="_top"> <!-- Action para mandar los resultados a la base de datos -->
+
+        <fieldset>
+            <legend> Supcripcion</legend> <!-- Fieldset añade el recuadro y legend el nombre o titulo -->
+
+            <label for="fname">Nombre</label> <br>
+            <input type="text" id="fname" name="fname" maxlength="15" autofocus><br>
+                <br>
+            <label for="lname">Apellidos</label><br>
+            <input type="text" id="lname" name="lname" maxlength="25"><br>
+                <br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br>
+                <br>
+            <label for="phone">Telefono movil(El fromato especifiado)</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+34 111 11 11 11" pattern="+34 ___ __ __ __" required>
+
+            <p>Cuota</p>
+
+            <input type="radio" id="Anual" name="cuota" value="Anual">
+            <label for="Anual">Anual</label>
+
+            <input type="radio" id="Mensual" name="cuota" value="Mensual">
+            <label for="Mensual">Mensual</label><br>
+                <br>
+            <input type="checkbox" id="spam" name="spam" value="Recibir novedades en su correo">
+            <label for="spam"> Recibir novedades en su correo </label><br>
+                <br>
+            <input type="submit" value="Suscribirse"> <input type="reset" value="Borrar valores">
+
+        </fieldset>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+para gastos
+
+	make "gasto readword
+	while [:gasto > 0] [print :gasto
+				make "gasto readword]
+
+fin
+
+haz "gasto 0

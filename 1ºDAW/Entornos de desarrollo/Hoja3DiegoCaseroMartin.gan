@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Hoja3DiegoCaseroMartin" company="Diego Casero Martin" webLink="http://" view-date="2021-09-26" view-index="0" gantt-divider-location="608" resource-divider-location="601" version="2.8.11" locale="es">
+    <description/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="270" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="167" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="167" order="2"/>
+        <option id="taskLabelUp" value="taskDates"/>
+        <option id="taskLabelLeft" value="resources"/>
+        <option id="color.recent"><![CDATA[#009999 #0099cc #000000]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="237" order="0"/>
+        <field id="1" name="Función" width="112" order="1"/>
+        <field id="tpc0" name="Perfil" width="136" order="2"/>
+        <field id="5" name="Tarifa estándar" width="112" order="3"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2021" month="11" date="1" type="HOLIDAY"/>
+        <date year="2021" month="12" date="6" type="HOLIDAY"/>
+        <date year="2021" month="12" date="25" type="HOLIDAY"/>
+        <date year="2022" month="1" date="1" type="HOLIDAY"/>
+        <date year="2022" month="1" date="6" type="HOLIDAY"/>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="22" name="GESTION DE SOFTWARE" color="#000000" meeting="false" start="2021-10-28" duration="72" complete="0" thirdDate="2021-12-15" thirdDate-constraint="0" expand="true">
+            <task id="0" name="FASE 1: analisis y especificacion de los requisitos" color="#000000" meeting="false" start="2021-10-28" duration="9" complete="0" thirdDate="2021-12-15" thirdDate-constraint="0" expand="true">
+                <task id="31" name="Estudio previo y entrevista con el cliente" color="#8cb6ce" meeting="false" start="2021-10-28" duration="4" complete="0" thirdDate="2021-12-02" thirdDate-constraint="0" expand="true">
+                    <depend id="3" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="3" name="Identificacion de los requisitos del usuario" color="#8cb6ce" meeting="false" start="2021-11-04" duration="5" complete="0" thirdDate="2021-12-15" thirdDate-constraint="0" expand="true">
+                    <depend id="4" type="1" difference="0" hardness="Strong"/>
+                </task>
+                <task id="4" name="Identificacion de los requisitos de rendimineto y de HW/SW" color="#8cb6ce" meeting="false" start="2021-11-04" duration="5" complete="0" thirdDate="2021-12-16" thirdDate-constraint="0" expand="true">
+                    <depend id="5" type="1" difference="0" hardness="Strong"/>
+                </task>
+                <task id="5" name="Preparacion de documentacion de especificacion de requisitos" color="#8cb6ce" meeting="false" start="2021-11-04" duration="3" complete="0" thirdDate="2021-12-16" thirdDate-constraint="0" expand="true">
+                    <depend id="47" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="47" name="Entrega de la especificaciones de requisitos" color="#009999" meeting="true" start="2021-11-09" duration="0" complete="0" thirdDate="2021-12-09" thirdDate-constraint="0" expand="true">
+                    <depend id="7" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="6" name="FASE 2: modelo conceptual" meeting="false" start="2021-11-09" duration="8" complete="0" expand="true">
+                <task id="7" name="Construccion del modelo de objetos" color="#8cb6ce" meeting="false" start="2021-11-09" duration="4" complete="0" thirdDate="2021-12-15" thirdDate-constraint="0" expand="true">
+                    <depend id="8" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="8" name="Especificacion de metodos y atributos de las clases" color="#8cb6ce" meeting="false" start="2021-11-15" duration="4" complete="0" thirdDate="2021-12-15" thirdDate-constraint="0" expand="true">
+                    <depend id="10" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="9" name="FASE 3 : diseño" meeting="false" start="2021-11-19" duration="5" complete="0" expand="true">
+                <task id="10" name="Obtencion de la arquitectura de la aplicacion" color="#8cb6ce" meeting="false" start="2021-11-19" duration="4" complete="0" thirdDate="2021-12-27" thirdDate-constraint="0" expand="true">
+                    <depend id="11" type="1" difference="0" hardness="Strong"/>
+                </task>
+                <task id="11" name="Diseño de la BD" color="#8cb6ce" meeting="false" start="2021-11-19" duration="5" complete="0" thirdDate="2021-12-20" thirdDate-constraint="0" expand="true">
+                    <depend id="13" type="2" difference="0" hardness="Strong"/>
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="25" name="Diagrama de clases UML" color="#009999" meeting="true" start="2021-11-26" duration="0" complete="0" thirdDate="2021-12-15" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="12" name="FASE 4: codificacion" meeting="false" start="2021-11-26" duration="40" complete="0" expand="true">
+                <task id="13" name="Implementacion de la aplicacion" color="#8cb6ce" meeting="false" start="2021-11-26" duration="40" complete="0" thirdDate="2021-12-15" thirdDate-constraint="0" expand="true">
+                    <depend id="16" type="2" difference="0" hardness="Strong"/>
+                    <depend id="28" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="28" name="Desarrollo de prototipo funcional" color="#009999" meeting="true" start="2022-01-25" duration="0" complete="0" thirdDate="2021-12-15" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="15" name="FASE 5: pruebas" meeting="false" start="2022-01-25" duration="12" complete="0" expand="true">
+                <task id="16" name="Pruebas individuales de clases y sus metodos" color="#8cb6ce" meeting="false" start="2022-01-25" duration="5" complete="0" thirdDate="2022-03-01" thirdDate-constraint="0" expand="true">
+                    <depend id="17" type="1" difference="0" hardness="Strong"/>
+                </task>
+                <task id="17" name="Prueba de integracion de los componentes" color="#8cb6ce" meeting="false" start="2022-01-25" duration="5" complete="0" thirdDate="2021-12-22" thirdDate-constraint="0" expand="true">
+                    <depend id="18" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="18" name="Prueba del sistema" color="#8cb6ce" meeting="false" start="2022-02-01" duration="4" complete="0" thirdDate="2022-03-08" thirdDate-constraint="0" expand="true">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="19" name="Pruebas de aeptacion del cliente" color="#8cb6ce" meeting="false" start="2022-02-07" duration="3" complete="0" thirdDate="2022-03-14" thirdDate-constraint="0" expand="true">
+                    <depend id="30" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="30" name="Entrega final del software" color="#009999" meeting="true" start="2022-02-10" duration="0" complete="0" thirdDate="2021-12-15" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <custom-property-definition id="tpc0" name="Perfil" type="text"/>
+        <resource id="0" name="Recurso 1" function="1" contacts="" phone="">
+            <rate name="standard" value="100"/>
+            <custom-property definition-id="tpc0" value="Ingeniero Informatico"/>
+        </resource>
+        <resource id="1" name="Recurso 2" function="2" contacts="" phone="">
+            <rate name="standard" value="90"/>
+            <custom-property definition-id="tpc0" value="Analista"/>
+        </resource>
+        <resource id="2" name="Recurso 3" function="3" contacts="" phone="">
+            <rate name="standard" value="70"/>
+            <custom-property definition-id="tpc0" value="Programador"/>
+        </resource>
+        <resource id="3" name="Recurso 4" function="4" contacts="" phone="">
+            <rate name="standard" value="50"/>
+            <custom-property definition-id="tpc0" value="Desarrollador"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="31" resource-id="0" function="1" responsible="true" load="75.0"/>
+        <allocation task-id="3" resource-id="0" function="1" responsible="true" load="25.0"/>
+        <allocation task-id="4" resource-id="0" function="1" responsible="true" load="25.0"/>
+        <allocation task-id="22" resource-id="0" function="1" responsible="true" load="25.0"/>
+        <allocation task-id="5" resource-id="0" function="1" responsible="true" load="20.0"/>
+        <allocation task-id="13" resource-id="0" function="1" responsible="true" load="75.0"/>
+        <allocation task-id="19" resource-id="0" function="1" responsible="true" load="75.0"/>
+        <allocation task-id="31" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="2" responsible="false" load="25.0"/>
+        <allocation task-id="3" resource-id="1" function="2" responsible="false" load="25.0"/>
+        <allocation task-id="5" resource-id="1" function="2" responsible="false" load="20.0"/>
+        <allocation task-id="7" resource-id="1" function="2" responsible="true" load="50.0"/>
+        <allocation task-id="10" resource-id="1" function="2" responsible="true" load="50.0"/>
+        <allocation task-id="13" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="2" function="3" responsible="false" load="25.0"/>
+        <allocation task-id="4" resource-id="2" function="3" responsible="false" load="25.0"/>
+        <allocation task-id="7" resource-id="2" function="3" responsible="false" load="30.0"/>
+        <allocation task-id="8" resource-id="2" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="2" function="3" responsible="false" load="50.0"/>
+        <allocation task-id="11" resource-id="2" function="3" responsible="true" load="50.0"/>
+        <allocation task-id="13" resource-id="2" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="2" function="3" responsible="false" load="50.0"/>
+        <allocation task-id="17" resource-id="2" function="3" responsible="false" load="50.0"/>
+        <allocation task-id="19" resource-id="2" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="3" function="4" responsible="false" load="50.0"/>
+        <allocation task-id="4" resource-id="3" function="4" responsible="false" load="50.0"/>
+        <allocation task-id="11" resource-id="3" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="3" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="3" function="4" responsible="true" load="50.0"/>
+        <allocation task-id="17" resource-id="3" function="4" responsible="true" load="50.0"/>
+        <allocation task-id="18" resource-id="3" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="3" function="4" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Jefe del proyecto"/>
+        <role id="2" name="Analista"/>
+        <role id="3" name="Programador"/>
+        <role id="4" name="Testeador"/>
+    </roles>
+</project>

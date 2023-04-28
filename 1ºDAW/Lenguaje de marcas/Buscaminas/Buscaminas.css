@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Titulo";
+    src: url(ka1.ttf);
+}
+@font-face {
+    font-family: "Reloj";
+    src: url(LCDM2B__.TTF);
+}
+body{
+    animation-name: anim;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes anim{
+    0% {background-color: #DC3BE3;} /*Rosa*/
+    50% {background-color: #264DB6;} /*Azul*/
+    100% {background-color: #DC3BE3;}
+
+}
+H1 {
+    text-align: center;
+    FONT-FAMILY: Titulo;
+    font-size :70px;
+}
+.panel{
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 450px;
+    height: 600px;
+    background-color: #ee6314;
+    /*background-color: -prefix-linear-gradient(top, #9587e7, #814a78);*/
+    border: 1px solid #000;
+    border-radius: 10px;
+    z-index: -2;
+    box-shadow: 0 10px 10px 0px;
+}
+.panel-cabecera{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 1px solid black;
+    margin: 20px;
+    background: #c2cca8;
+    z-index: -1;
+    width: 90%;
+    height:40%;
+}
+.bisagra{
+    position: relative;
+    width: 105%;
+    height: 7%;
+    z-index: -1;
+    background-color:#ee6314;
+    border: 1px solid black;
+    border-radius: 30px;
+    top: 270px;
+    right: 12px;
+    box-shadow: 5px;
+}
+.reloj p{
+    position: absolute;
+    font-family: Reloj;
+    font-size: 10px;
+    top:0px;
+    left: 5px;
+    
+}
+.boton1 {
+    z-index: 1;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    box-shadow: 10px;
+    border-radius:50%;
+    width : 45px;
+    height : 45px;
+    background-color :#b2ee14;
+    bottom: 120px;
+    right: 60px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
+}
+.boton1 p{
+    font-family: Helvetica;
+}
+.boton2 {
+    z-index: 1;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
+    border-radius:50%;
+    width : 45px;
+    height : 45px;
+    background-color :#b2ee14;
+    bottom: 170px;
+    right: 120px;
+}
+.boton2 p{
+    font-family: Helvetica;
+}
+.cruz{
+    background: #b2ee14;
+    left: 100px;
+    bottom: 100px;
+    height: 100px;
+    position: absolute;
+    width: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
+  }
+.cruz:after {
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
+    bottom: 100px;
+    background: #b2ee14;
+    content: "";
+    height: 20px;
+    left: -40px;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+  }
+table {
+    border: 1px dashed #000;
+    width: 220px;
+    height: 220px;
+}
+tr {
+    border: 1px dashed #000;
+}
+td {
+    border: 1px dashed #000;
+}

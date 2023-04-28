@@ -1,0 +1,16 @@
+to comparacion3
+
+		make "A readword
+		make "B readword
+		make "C readword
+
+			ifelse :A > :B [make "mayor :A][make "mayor :B ]
+
+			ifelse :mayor > :C [print :mayor][print :C]
+
+end
+
+Make "a 3
+Make "b 3
+Make "c 3
+Make "mayor 3

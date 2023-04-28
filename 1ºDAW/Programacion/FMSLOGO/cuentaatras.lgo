@@ -1,0 +1,7 @@
+para cuentaatras :num
+	while [:num > 0][make "num :num - 1
+			print :num]
+
+	print [FIN]
+fin
+

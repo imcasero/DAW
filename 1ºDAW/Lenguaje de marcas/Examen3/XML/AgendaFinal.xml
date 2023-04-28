@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "AgendaFinal.dtd">
+<agenda cod="1">
+    <contacto tipo="trabajo">
+        <nombre>Juan</nombre>
+        <movil>1111</movil>
+        <fijo>999</fijo>
+    </contacto>
+    <contacto tipo="trabajo">
+        <nombre>Antonio</nombre>
+        <movil>2222</movil>
+        <fijo>888</fijo>
+    </contacto>
+    <contacto tipo="normal">
+        <nombre>Jose</nombre>
+        <movil>3333</movil>
+        <fijo>777</fijo>
+    </contacto>
+    <contacto tipo="normal">
+        <nombre>Carol</nombre>
+        <movil>4444</movil>
+        <fijo>666</fijo>
+    </contacto>
+    <contacto tipo="normal">
+        <nombre>Francisco</nombre>
+        <movil>5555</movil>
+        <fijo>555</fijo>
+    </contacto>
+</agenda>

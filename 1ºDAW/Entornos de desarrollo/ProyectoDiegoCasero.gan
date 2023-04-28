@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="GanttDiegoCasero" company="IES Domenico Scarlatti" webLink="http://https://www.domenicoscarlatti.es/" view-date="2022-10-03" view-index="0" gantt-divider-location="442" resource-divider-location="794" version="3.1.3100" locale="es_ES">
+    <description>
+        <![CDATA[Proyecto realizado por Diego Casero Martín.]]>
+    </description>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="148" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="112" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="112" order="2"/>
+        <field id="tpd12" name="Costo" width="51" order="3"/>
+        <option id="taskLabelLeft" value="taskDates"/>
+        <option id="taskLabelRight" value="resources"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="160" order="0"/>
+        <field id="1" name="Función" width="135" order="1"/>
+        <field id="tpc0" name="Perfil" width="228" order="2"/>
+        <field id="5" name="Tarifa estándar" width="120" order="3"/>
+        <field id="tpc1" name="Nombre y Apellidos" width="147" order="4"/>
+    </view>
+    <!-- -->
+    <calendars base-id="es">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY">
+            <![CDATA[New Year's Day]]>
+        </date>
+        <date year="" month="1" date="6" type="HOLIDAY">
+            <![CDATA[Epiphany]]>
+        </date>
+        <date year="" month="5" date="1" type="HOLIDAY">
+            <![CDATA[Labour Day]]>
+        </date>
+        <date year="" month="8" date="15" type="HOLIDAY">
+            <![CDATA[Assumption Day]]>
+        </date>
+        <date year="" month="10" date="12" type="HOLIDAY">
+            <![CDATA[Hispanic Day]]>
+        </date>
+        <date year="" month="11" date="1" type="HOLIDAY">
+            <![CDATA[All Saints Day]]>
+        </date>
+        <date year="" month="12" date="6" type="HOLIDAY">
+            <![CDATA[Constitution Day]]>
+        </date>
+        <date year="" month="12" date="8" type="HOLIDAY">
+            <![CDATA[Immaculate Conception Day]]>
+        </date>
+        <date year="" month="12" date="25" type="HOLIDAY">
+            <![CDATA[Christmas Day]]>
+        </date>
+        <date year="2016" month="3" date="24" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2016" month="3" date="25" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2017" month="1" date="2" type="HOLIDAY">
+            <![CDATA[New Year's Holiday]]>
+        </date>
+        <date year="2017" month="4" date="13" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2017" month="4" date="14" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2018" month="3" date="29" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2018" month="3" date="30" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2019" month="4" date="18" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2019" month="4" date="19" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2020" month="4" date="9" type="HOLIDAY">
+            <![CDATA[Maundy Thursday]]>
+        </date>
+        <date year="2020" month="4" date="10" type="HOLIDAY">
+            <![CDATA[Good Friday]]>
+        </date>
+        <date year="2020" month="11" date="2" type="HOLIDAY">
+            <![CDATA[All Saints Day (in lieu)]]>
+        </date>
+        <date year="2020" month="12" date="7" type="HOLIDAY">
+            <![CDATA[Constitution Day (in lieu)]]>
+        </date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="INVENTARIO DEL ARBOLADO DE LA CUIDAD" color="#8cb6ce" meeting="false" start="2022-10-03" duration="58" complete="5" thirdDate="2022-10-03" thirdDate-constraint="0" expand="true">
+            <task id="3" name="FASE 1 datos previos" color="#8cb6ce" meeting="false" start="2022-10-03" duration="16" complete="50" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                <task id="1" name="RECOPILACION DE DATOS BASICOS" color="#8cb6ce" meeting="false" start="2022-10-03" duration="6" complete="100" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="2" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="2" name="DEFINICION CARACTERISTICAS DEL INVENTARIO" color="#8cb6ce" meeting="false" start="2022-10-11" duration="10" complete="20" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="11" type="2" difference="0" hardness="Strong"/>
+                    <depend id="15" type="2" difference="0" hardness="Strong"/>
+                    <depend id="17" type="2" difference="0" hardness="Strong"/>
+                    <depend id="21" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="4" name="FASE 2 trabajo de campo" color="#8cb6ce" meeting="false" start="2022-10-03" duration="48" complete="4" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                <task id="5" name="PREPARACION CAMPAÑA RECOGIDA DE DATOS" color="#8cb6ce" meeting="false" start="2022-10-03" duration="5" complete="69" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="6" type="2" difference="0" hardness="Strong"/>
+                    <depend id="7" type="2" difference="0" hardness="Strong"/>
+                    <depend id="8" type="2" difference="0" hardness="Strong"/>
+                    <depend id="9" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="6" name="RECOGIDA DE DATOS ZONA NOR" color="#8cb6ce" meeting="false" start="2022-10-10" duration="20" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="8" type="2" difference="0" hardness="Strong"/>
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="7" name="REGOGIDA DE DATOS ZONA ESTE" color="#8cb6ce" meeting="false" start="2022-10-10" duration="15" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="9" type="2" difference="0" hardness="Strong"/>
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="8" name="RECOGIDA DE DATOS ZONA SUR" color="#8cb6ce" meeting="false" start="2022-11-09" duration="23" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="9" name="RECOGIDA DE DATOS ZONA OESTE" color="#8cb6ce" meeting="false" start="2022-11-02" duration="16" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="25" name="FINALIZACION DE TRABAJO DE CAMPO" color="#8cb6ce" meeting="true" start="2022-12-14" duration="0" complete="0" thirdDate="2022-10-03" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="10" name="FASE 3 sistema de infroacion geografica" color="#8cb6ce" meeting="false" start="2022-10-26" duration="22" complete="0" thirdDate="2022-10-03" thirdDate-constraint="0" expand="true">
+                <task id="11" name="CREACION DE LA BASE DE DATOS" color="#8cb6ce" meeting="false" start="2022-10-26" duration="2" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="12" type="2" difference="0" hardness="Strong"/>
+                    <depend id="13" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="12" name="VOLCADO DE INFROMACION EN BD" color="#8cb6ce" meeting="false" start="2022-10-28" duration="20" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="13" type="1" difference="0" hardness="Strong"/>
+                </task>
+                <task id="13" name="CARTOGRAFIADO" color="#8cb6ce" meeting="false" start="2022-10-28" duration="15" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="14" name="FASE 4 documentacion tecnica" color="#8cb6ce" meeting="false" start="2022-10-26" duration="35" complete="0" thirdDate="2022-10-03" thirdDate-constraint="0" expand="true">
+                <task id="15" name="MEMORIA DESCRIPTIVAS INICIAL" color="#8cb6ce" meeting="false" start="2022-10-26" duration="15" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="16" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="16" name="FICHAS DESCRIPTIVAS" color="#8cb6ce" meeting="false" start="2022-11-17" duration="20" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="19" type="3" difference="0" hardness="Strong"/>
+                </task>
+                <task id="17" name="DOCUMENTOS METODITOCOS" color="#8cb6ce" meeting="false" start="2022-10-26" duration="7" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="19" name="DOCUMENTO FINAL" color="#8cb6ce" meeting="false" start="2022-12-12" duration="5" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="22" type="3" difference="0" hardness="Strong"/>
+                    <depend id="24" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="20" name="FASE 5 diseño web" color="#8cb6ce" meeting="false" start="2022-10-26" duration="35" complete="0" thirdDate="2022-10-03" thirdDate-constraint="0" expand="true">
+                <task id="21" name="DEFINICION DE LA WEB" color="#8cb6ce" meeting="false" start="2022-10-26" duration="7" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="22" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="22" name="PUESTA EN MARCHA" color="#8cb6ce" meeting="false" start="2022-11-17" duration="20" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="24" type="2" difference="0" hardness="Strong"/>
+                    <depend id="26" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="26" name="WEB OPERATIVA" color="#8cb6ce" meeting="true" start="2022-12-19" duration="0" complete="0" thirdDate="2022-09-26" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="23" name="FASE 6 preparacion entrega final" color="#8cb6ce" meeting="false" start="2022-12-19" duration="7" complete="0" thirdDate="2022-10-03" thirdDate-constraint="0" expand="true">
+                <task id="24" name="MAQUETACION E IMPRESION DE RESULTADOS" color="#8cb6ce" meeting="false" start="2022-12-19" duration="7" complete="0" thirdDate="2021-12-01" thirdDate-constraint="0" expand="true">
+                    <depend id="29" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="29" name="ENTREGA FINAL" color="#8cb6ce" meeting="true" start="2022-12-28" duration="0" complete="0" thirdDate="2022-09-26" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+        <task id="56" name="tarea_56" meeting="false" start="2022-09-26" duration="1" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <custom-property-definition id="tpc0" name="Perfil" type="text"/>
+        <custom-property-definition id="tpc1" name="Nombre y Apellidos" type="text"/>
+        <resource id="4" name="Tecnico de campo 4" function="1" contacts="" phone="">
+            <rate name="standard" value="30"/>
+            <custom-property definition-id="tpc1" value="Recurso 5"/>
+            <custom-property definition-id="tpc0" value="Formacion profesional"/>
+        </resource>
+        <resource id="3" name="Tecnico de campo 3" function="1" contacts="" phone="">
+            <rate name="standard" value="30"/>
+            <custom-property definition-id="tpc1" value="Recurso 4"/>
+            <custom-property definition-id="tpc0" value="Formacion profesional"/>
+        </resource>
+        <resource id="2" name="Tecnico de campo 2" function="1" contacts="" phone="">
+            <rate name="standard" value="45"/>
+            <custom-property definition-id="tpc1" value="Recurso 3"/>
+            <custom-property definition-id="tpc0" value="Tecnico topografico"/>
+        </resource>
+        <resource id="1" name="Tecnico de campo 1" function="1" contacts="" phone="">
+            <rate name="standard" value="45"/>
+            <custom-property definition-id="tpc1" value="Recurso 2"/>
+            <custom-property definition-id="tpc0" value="Tecnico topografico"/>
+        </resource>
+        <resource id="6" name="Tecnico cartografico 2" function="3" contacts="" phone="">
+            <rate name="standard" value="70"/>
+            <custom-property definition-id="tpc1" value="Recurso 8"/>
+            <custom-property definition-id="tpc0" value="Tecnico cartografico"/>
+        </resource>
+        <resource id="8" name="Tecnico cartografico 1" function="3" contacts="" phone="">
+            <rate name="standard" value="70"/>
+            <custom-property definition-id="tpc1" value="Recurso 7"/>
+            <custom-property definition-id="tpc0" value="Tecnico cartografico"/>
+        </resource>
+        <resource id="7" name="Tecnico ambiental" function="4" contacts="" phone="">
+            <rate name="standard" value="70"/>
+            <custom-property definition-id="tpc1" value="Recurso 9"/>
+            <custom-property definition-id="tpc0" value="Licenciado en ciencias ambientales"/>
+        </resource>
+        <resource id="0" name="Responsable estudio" function="Default:1" contacts="asdasdasd@gmail.com" phone="11111111111">
+            <rate name="standard" value="150"/>
+            <custom-property definition-id="tpc1" value="Recurso 1"/>
+            <custom-property definition-id="tpc0" value="Ingeniero Agronomo"/>
+        </resource>
+        <resource id="11" name="Programador" function="8" contacts="" phone="">
+            <rate name="standard" value="90"/>
+            <custom-property definition-id="tpc1" value="Recurso 11"/>
+            <custom-property definition-id="tpc0" value="ingeniero infromatico"/>
+        </resource>
+        <resource id="10" name="Diseñador web" function="7" contacts="" phone="">
+            <rate name="standard" value="60"/>
+            <custom-property definition-id="tpc1" value="Recurso 10)"/>
+            <custom-property definition-id="tpc0" value="Diseñador grafico"/>
+        </resource>
+        <resource id="5" name="Analista GIS" function="2" contacts="" phone="">
+            <rate name="standard" value="100"/>
+            <custom-property definition-id="tpc1" value="Recurso 6"/>
+            <custom-property definition-id="tpc0" value="Ingeniero superior topografico"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="7" resource-id="4" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="4" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="2" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="2" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="6" function="3" responsible="false" load="50.0"/>
+        <allocation task-id="24" resource-id="6" function="3" responsible="false" load="50.0"/>
+        <allocation task-id="1" resource-id="8" function="3" responsible="false" load="50.0"/>
+        <allocation task-id="12" resource-id="8" function="3" responsible="false" load="50.0"/>
+        <allocation task-id="13" resource-id="8" function="3" responsible="true" load="50.0"/>
+        <allocation task-id="1" resource-id="7" function="4" responsible="false" load="50.0"/>
+        <allocation task-id="2" resource-id="7" function="4" responsible="false" load="50.0"/>
+        <allocation task-id="15" resource-id="7" function="4" responsible="false" load="50.0"/>
+        <allocation task-id="16" resource-id="7" function="4" responsible="true" load="50.0"/>
+        <allocation task-id="17" resource-id="7" function="4" responsible="false" load="50.0"/>
+        <allocation task-id="19" resource-id="7" function="4" responsible="false" load="50.0"/>
+        <allocation task-id="24" resource-id="7" function="4" responsible="true" load="50.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="20.0"/>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="15" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="21" resource-id="11" function="8" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="11" function="8" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="10" function="7" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="5" function="2" responsible="false" load="50.0"/>
+        <allocation task-id="2" resource-id="5" function="2" responsible="false" load="50.0"/>
+        <allocation task-id="11" resource-id="5" function="2" responsible="true" load="50.0"/>
+        <allocation task-id="12" resource-id="5" function="2" responsible="true" load="50.0"/>
+        <allocation task-id="17" resource-id="5" function="2" responsible="true" load="20.0"/>
+        <allocation task-id="21" resource-id="5" function="2" responsible="true" load="30.0"/>
+        <allocation task-id="22" resource-id="5" function="2" responsible="true" load="50.0"/>
+    </allocations>
+    <vacations/>
+    <previous>
+        <previous-tasks name="Seguimiento">
+            <previous-task id="0" start="2022-10-03" duration="55" meeting="false" super="true"/>
+            <previous-task id="3" start="2022-10-03" duration="13" meeting="false" super="true"/>
+            <previous-task id="1" start="2022-10-03" duration="6" meeting="false" super="false"/>
+            <previous-task id="2" start="2022-10-11" duration="7" meeting="false" super="false"/>
+            <previous-task id="4" start="2022-10-03" duration="48" meeting="false" super="true"/>
+            <previous-task id="5" start="2022-10-03" duration="5" meeting="false" super="false"/>
+            <previous-task id="6" start="2022-10-10" duration="20" meeting="false" super="false"/>
+            <previous-task id="7" start="2022-10-10" duration="15" meeting="false" super="false"/>
+            <previous-task id="8" start="2022-11-09" duration="23" meeting="false" super="false"/>
+            <previous-task id="9" start="2022-11-02" duration="16" meeting="false" super="false"/>
+            <previous-task id="25" start="2022-12-14" duration="0" meeting="true" super="false"/>
+            <previous-task id="10" start="2022-10-21" duration="30" meeting="false" super="true"/>
+            <previous-task id="11" start="2022-10-21" duration="10" meeting="false" super="false"/>
+            <previous-task id="12" start="2022-11-07" duration="20" meeting="false" super="false"/>
+            <previous-task id="13" start="2022-11-07" duration="15" meeting="false" super="false"/>
+            <previous-task id="14" start="2022-10-21" duration="35" meeting="false" super="true"/>
+            <previous-task id="15" start="2022-10-21" duration="15" meeting="false" super="false"/>
+            <previous-task id="16" start="2022-11-14" duration="20" meeting="false" super="false"/>
+            <previous-task id="17" start="2022-10-21" duration="7" meeting="false" super="false"/>
+            <previous-task id="19" start="2022-12-05" duration="5" meeting="false" super="false"/>
+            <previous-task id="20" start="2022-10-21" duration="35" meeting="false" super="true"/>
+            <previous-task id="21" start="2022-10-21" duration="7" meeting="false" super="false"/>
+            <previous-task id="22" start="2022-11-14" duration="20" meeting="false" super="false"/>
+            <previous-task id="26" start="2022-12-14" duration="0" meeting="true" super="false"/>
+            <previous-task id="23" start="2022-12-14" duration="7" meeting="false" super="true"/>
+            <previous-task id="24" start="2022-12-14" duration="7" meeting="false" super="false"/>
+            <previous-task id="29" start="2022-12-23" duration="0" meeting="true" super="false"/>
+            <previous-task id="56" start="2022-09-26" duration="1" meeting="false" super="false"/>
+        </previous-tasks>
+    </previous>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Tecnico de campo"/>
+        <role id="2" name="Analista GIS"/>
+        <role id="3" name="Tecnico cartografico"/>
+        <role id="4" name="Tecnico Ambiental"/>
+        <role id="5" name="Tecnico cartografico"/>
+        <role id="6" name="Tecnico ambiental"/>
+        <role id="7" name="Diseñador web"/>
+        <role id="8" name="Programador"/>
+    </roles>
+</project>

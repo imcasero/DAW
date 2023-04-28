@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+/* Style the body */
+body {
+  width:100%;
+  height:100% !important;
+  font-family: Arial;
+  margin: 0;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+/* Style the navigation bar links */
+.navbar a {
+  flex-grow: 1;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: flex-start;
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.empty {
+  flex-grow: 30
+}
+/*Bloque de contenido*/
+.contenedor { 
+  display: flex;
+  flex-direction: row;
+}
+.t1 {
+  width: 25%;
+  height:100%;
+  background-color: gray;
+}
+.t2 {
+  width: 50%;
+  height: 100%;
+}
+.t3 {
+  width: 25%;
+  height:100%;
+  background-color: gray;
+}
+/* Footer */
+footer {
+  bottom: 0 ; 
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .navbar {   
+    flex-direction: column;
+  }
+  .search{
+    order: 1;
+  }
+  .search img {
+    width: 0;
+    height: 0;
+  }
+  .img {
+    order: 0;
+  }
+  .vid {
+    order: 2;
+  }
+  .tut {
+    order: 3;
+  }
+  .pod {
+    order:4;
+  }
+  .contenedor{
+    display: flex;
+    flex-direction: column;
+  }
+  .t1 , .t2 , .t3{
+    width : 100%;
+  }
+
+}

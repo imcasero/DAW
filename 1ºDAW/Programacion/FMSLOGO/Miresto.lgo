@@ -1,0 +1,15 @@
+para miresto :dividendo :divisor
+
+	make "resultado :dividendo / :divisor
+	make "exacto int :resultado
+	make "decimales :resultado - :exacto
+	
+	make "resto :decimales * :divisor
+	
+	print :resto
+fin
+
+haz "decimales 0.2
+haz "exacto 1
+haz "resto 2
+haz "resultado 1.2

@@ -1,0 +1,5 @@
+para paralelogramo :ancho :alto
+	repeat 2[fd :ancho right 110 fd :alto right 70]
+	
+fin
+

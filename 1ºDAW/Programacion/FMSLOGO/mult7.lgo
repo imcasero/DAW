@@ -1,0 +1,21 @@
+para mult7
+
+	make "inicial 100
+	make "contador 0
+
+	while [:inicial <> 0][
+		if :resto = 0 [make "contador :contador + 1]
+		make "resto remainder :inicial 7
+		
+		if :resto = 0[
+	print :inicial]
+	make "inicial :inicial - 1
+]
+	print :contador
+
+fin
+
+haz "contador 14
+haz "inicial 0
+haz "resto 1
+haz "resultado 0.142857142857143

@@ -1,0 +1,58 @@
+para trapecio
+		make "base1 readword
+		make "base2 readword
+		make "altura readword ;recojo datos
+
+	pendown
+	
+		make "diferenciaT :base1 - :base2
+		make "diferenciaF :diferenciaT /2 ;datos para operaciones futuras
+	
+	right 90 fd :base1 left 180 fd :base1 /2 ;imprimo primera linea y recoloco en el centro
+
+	penup
+
+	right 90 fd :altura
+	left 90 fd :base2 /2 ;recoloco para pintar la segunda base, superior
+
+	pendown
+
+	right 180 fd :base2 ;imprimo la segunda base
+
+	penup
+
+	right 90 fd :altura left 90 fd :diferenciaF ;me posiciono en un extremo de la base inferior para realizar la hipotenusa
+
+		make "hipotenusa rc((:diferenciaF * :diferenciaF) + (:altura * :altura));calculo la hipotenusa
+		
+		make "angulo arcsen (:altura / :hipotenusa)
+
+	left 90 fd :altura left 90 fd :diferenciaF right 180
+
+	pendown
+		
+		right :angulo
+		fd :hipotenusa
+	
+	penup
+		home
+		fd :altura right 90 fd :diferenciaF left 180
+		
+	pendown
+		
+		left :angulo
+		fd :hipotenusa
+	
+		
+			
+fin
+
+haz "altura 300
+haz "angulo 80.5376777919744
+haz "angulof 63.434948822922
+haz "base1 100
+haz "base2 200
+haz "diferenciaf -50
+haz "diferenciat -100
+haz "hipotenusa 304.138126514911
+haz "operacion1 153.434948822922

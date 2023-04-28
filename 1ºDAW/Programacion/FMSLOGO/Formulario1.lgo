@@ -1,0 +1,30 @@
+para Impuesto
+		make "bruto readword
+	make "por :bruto *0.15/100
+		make "hijos readword
+	make "hijosT :hijos * 50
+		make "Vehiculos readword
+	make "DineroC :vehiculos * 125
+
+		print :por
+		print :hijosT
+		print :DineroC
+		make "pago :por - :hijosT + :DineroC
+		
+		print :pago
+
+haz "bruto 10000
+haz "dineroc 250
+haz "hijos 1
+haz "hijost 50
+haz "por 15
+haz "vehiculos 2
+
+
+haz "bruto 10000
+haz "dineroc 250
+haz "hijos 1
+haz "hijost 50
+haz "pago 215
+haz "por 15
+haz "vehiculos 2

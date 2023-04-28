@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postales</title>
+    <style>
+      * {
+        font-family: Helvetica, sans-serif;
+      }
+      form {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid gray;
+        border-radius: 10px;
+      }
+
+      label {
+        font-weight: bold;
+        margin-top: 20px;
+        display: block;
+      }
+
+      select,
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+
+      button[type="submit"] {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      button[type="submit"]:hover {
+        transition: 0.5s;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: white;
+        color: green;
+        border: none;
+        border-radius: 5px;
+        border: 1px solid green;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="form.php" method="post">
+      <label for="tema">Eliga un tema: </label> <br />
+      <select name="tema">
+        <option value="navidad">navidad</option>
+        <option value="cumple">cumpleaños</option>
+        <option value="verano">verano</option></select
+      ><br />
+      <button type="submit">Mostrar Postales</button>
+    </form>
+  </body>
+</html>

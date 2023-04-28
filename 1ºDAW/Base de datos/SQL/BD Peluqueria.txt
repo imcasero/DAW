@@ -1,0 +1,41 @@
+ CREATE TABLA Servicios (
+	Codigo, INTEGER AUTO_INCREMENT PRIMARY KEY ,
+	Fechahora DATEtime NOT NULL,
+	Tipo servicio VARCHAR(100)
+)engine=innodb;
+
+ CREATE TABLE Empleados(
+	DNI VARCHAR(20) PRIMARY JEY,
+	Nombre VARCHAR(50) NOT NULL
+	Especialidad VARCHAR(50) NOT NULL
+)engine=innodb;
+
+ CREATE TABLE Clientes(
+	DNI VARCHAR(10) PRIMARY KEY,
+	Nombre VARCHAR(50) NOT NULL,
+	Profesional VARCHAR (50)NULL,
+	Telefono VARCHAR (11) NOT NULL,
+	Direccion VARCHAR(100) NULL
+)engine=innodb;
+
+ CREATE TABLE Cosmeticos(
+	Codigo SMALLINT INTEGER AUTO_INCREMENT PRIMARY KEY,
+	Nombre VARCHAR (50)
+	Precio decimal(7 , 2)
+	
+)
+ 
+ CREATE TABLE Citas(
+	DNIEmpleado VARCHAR()
+	DNICliente VARCHAR()
+	CodigoServicios TINYINT NOT NULL
+	FechaHora DATETIME NOT NULL
+		PRIMARY KEY (DNIEmpleado, DNICliente, CodigoServicio)
+		Constraint fk_ce FOREIGN KEY (DNIEmpleado) References eMPLEADOS(dni)
+			ON DELETE NO ACTION TO UPDATE CASCADE
+		Constraint fk_cC FOREIGN KEY (DNI	Clientes) References Clientes(dni)
+			ON DELETE NO ACTION TO UPDATE CASCADE
+		Constraint fk_cS FOREIGN KEY (DNIEmpleado) References eMPLEADOS(dni)
+			ON DELETE NO ACTION TO UPDATE CASCADE
+
+)

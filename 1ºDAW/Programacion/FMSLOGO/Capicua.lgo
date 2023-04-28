@@ -1,0 +1,23 @@
+para capicua :i
+	
+	make "copia :i
+	make "inverso 0
+
+	while[:i <> 0][make "inverso :inverso*10 + remainder :i 10
+			make "i int (:i/10)] ; para invertir el numero
+
+;Ejemplo para el siguiente numero de como va evolucionando inverso
+;8128
+; 0 * 10 + 8=8
+;812
+;8 * 10 + 2 82
+; y asi consecutivamente
+
+	ifelse :inverso = :copia [Make "resul "true][Make "resul "false]
+
+	output :resul
+fin
+
+haz "copia 1221
+haz "inverso 1221
+haz "resul "true

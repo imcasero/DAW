@@ -1,0 +1,11 @@
+para mayor
+
+	make "valor1 readword
+	make "valor2 readword
+
+	ifelse :valor1 > :valor2 [output :valor1] [output :valor2]
+
+fin
+
+haz "valor1 2
+haz "valor2 10

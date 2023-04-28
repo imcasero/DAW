@@ -1,0 +1,52 @@
+.barra{
+    width: 100%;
+    height: 50px;
+    background-color:black;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    background-color: darkgray;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.contenedor div{
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    background-color: darkgray;
+}
+
+@media (max-width: 600px) {
+    .barra{
+        width: 100%;
+        height: 50px;
+        background-color:black;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedor{
+        flex-direction: column;
+        background-color: darkgray;
+        top: 0;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .contenedor div{
+        border: 1px solid black;
+        width: 100%;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        background-color: darkgray;
+    }  
+  }
+  
+    

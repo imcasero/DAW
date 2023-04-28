@@ -1,0 +1,37 @@
+para cuenta0
+
+	make "mayor 0 ;creo la variable mayor para poder comparar
+
+	make "i readword ;recojo un valor numerico
+
+	make "contador 0 
+
+	make "acumulador 0
+
+		while [:i <> 0][ ;mientras que el valor numerico sea distinto de 0
+
+	make "contador :contador + 1 ;contador acumula un valor
+
+	make "acumulador :acumulador + :i ;acumulador acumula el valor
+
+		if :i > :mayor [ make "mayor :i ] ;comparo el valor de i con mayor, cuando sea mayor se sustituita el valor
+
+		make "media :acumulador / :contador ;al dividir los valores acumulados y el numero de veces que se repiten consigo la media
+
+		make "i readword ;recojo un valor numerico
+]
+
+		print :contador
+
+		print :media
+
+		print :mayor
+
+fin
+
+haz "acumulador 10
+haz "contador 4
+haz "i 0
+haz "mayor 4
+haz "media 2.5
+haz "menor 0

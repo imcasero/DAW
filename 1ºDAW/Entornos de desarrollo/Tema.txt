@@ -1,0 +1,88 @@
+T1- Lenguajes de programacion interpretados practica 15.
+
+Jueves 7 entregar word y power point
+
+T3- Diagrama de casos de uso
+	- para que sirve
+	- que se proyecta
+	- reglas de construccion
+	- simbolos
+	- y su utilidad
+Como ya se ha mencionado, los diagramas de casos de 
+uso se utilizan para reunir los requisitos de uso de un 
+sistema. Dependiendo de sus necesidades, puede utilizar 
+esos datos de diferentes maneras. A continuación se presentan 
+algunas formas de usarlas.
+
+Identificarlas funciones y la forma en que los roles intera
+ctúan con ellas – El propósito principal de los diagramas de
+ casos de uso.
+Para una visión de alto nivel del 
+sistema – Especialmente útil cuando se presenta a los administradores o a las partes interesadas. Se pueden destacar los papeles que interactúan con el sistema y la funcionalidad proporcionada por el sistema sin profundizar en el funcionamiento interno del sistema.
+Identificar los factores internos y externos 
+– Esto puede parecer simple pero en grandes proyectos 
+complejos un sistema puede ser identificado como 
+una función externa en otro caso de uso.
+Usar los objetos del Diagrama de Caso
+Los diagramas de caso de uso consisten en 4 objetos.
+
+Actor
+Caso de uso
+Sistema
+Paquete
+Los objetos se explican con más detalle a continuación.
+
+Actor
+Elactor en undiagrama de caso de uso de es cualquier entidad que desempeñe un papel en un sistema determinado. Puede ser una persona, una organización o un sistema externo y normalmente se dibuja como el esqueleto que se muestra a continuación.
+
+Actor
+Caso de uso
+Un caso de uso representa una función o una acción dentro del sistema. Está dibujado como un óvalo y nombrado con la función.
+
+Case
+Sistema
+El sistema se utiliza para definir el alcance del caso de uso y se dibuja como un rectángulo. Este es un elemento opcional pero útil cuando se visualizan sistemas grandes. Por ejemplo, puede crear todos los casos de uso y luego utilizar el objeto del sistema para definir el alcance que abarca su proyecto. O incluso puedes usarlo para mostrar las diferentes áreas cubiertas en los diferentes lanzamientos.Sistema
+Paquete
+El paquete es otro elemento opcional que es extremadamente útil en diagramas complejos. De manera similar a los diagramas de clase, los paquetes se utilizan para agrupar los casos de uso. Se dibujan como la imagen que se muestra a continuación.
+
+Paquete
+
+Guías de diagramas de casos de uso
+Aunque los diagramas de casos de uso pueden utilizarse con diversos fines, hay algunas directrices comunes que deben seguirse al dibujar los casos de uso.
+
+Entre ellas figuran las normas de denominación, la dirección de las flechas, la colocación de los casos de uso, el uso de las casillas del sistema y también el uso adecuado de las relaciones.
+
+Hemos cubierto estas directrices en detalle en una entrada de blog separada. Así que adelante y revisa las guías de diagramas de casos de las guías de diagramas de casos de uso >>.
+
+Relaciones en los diagramas de casos de uso
+Hay cinco tipos de relaciones en un diagrama de casos de uso. Son..
+
+Asociación entre un actor y un caso de uso
+Generalización de un actor
+Ampliar la relación entre dos casos de uso
+Incluir la relación entre dos casos de uso
+Generalización de un caso de uso
+Hemos cubierto todas estas relaciones en una entrada de blog separada que tiene ejemplos con imágenes. No entraremos en detalles en este post, pero puede consultar las Relaciones de los Diagramas de Casos de Uso explicadas en los diagramas de casos de uso >>.
+
+Cómo crear un diagrama de caso de uso
+Hasta ahora, has aprendido sobre objetos, relaciones y pautas que son críticas al dibujar diagramas de casos de uso. Explicaré los diversos procesos usando un sistema bancario como ejemplo.
+
+Identificación de los actores
+Los actores son entidades externas que interactúan con su sistema. Puede ser una persona, otro sistema o una organización. En un sistema bancario, el actor más obvio es el cliente. Otros actores pueden ser empleados del banco o cajeros, dependiendo del papel que intente mostrar en el caso de uso.
+
+Un ejemplo de organización externa puede ser la autoridad tributaria o el banco central. El procesador de préstamos es un buen ejemplo de un sistema externo asociado como actor.
+
+Identificación de los casos de uso
+Ahora es el momento de identificar los casos de uso. Una buena manera de hacerlo es identificar lo que los actores necesitan del sistema. En un sistema bancario, el cliente tendrá que abrir cuentas, depositar y retirar fondos, solicitar talonarios de cheques y funciones similares. Por lo tanto, todos ellos pueden considerarse como casos de uso.
+
+Los casos de uso de alto nivel siempre deben proporcionar una función completa requerida por un actor. Se pueden ampliar o incluir casos de uso dependiendo de la complejidad del sistema.
+
+Una vez que se identifican los actores y el caso de uso de nivel superior se tiene una idea básica del sistema. Ahora puedes afinarlo y añadirle capas adicionales de detalle.
+
+Busque la funcionalidad común a utilizar Incluya
+Busca una funcionalidad común que pueda ser reutilizada en todo el sistema. Si encuentras dos o más casos de uso que comparten una funcionalidad común, puedes extraer las funciones comunes y añadirlas a un caso de uso separado. Entonces puedes conectarlo a través de la relación de inclusión para mostrar que siempre se llama cuando se ejecuta el caso de uso original. ( ver el diagrama para un ejemplo ).
+
+¿Es posible generalizar los actores y los casos de uso
+Puede haber casos en que los actores se asocien con casos de uso similares mientras que desencadenan unos pocos casos de uso exclusivos de ellos. En tales casos, se puede generalizar el actor para mostrar la herencia de las funciones. Puedes hacer algo similar para el caso de uso también.
+
+Uno de los mejores ejemplos de esto es el caso de uso de “Make Payment” en un sistema de pago. Puede generalizarse aún más a “Pagar con tarjeta de crédito”, “Pagar en efectivo”, “Pagar con cheque”, etc. Todos ellos tienen los atributos y la funcionalidad de pago con escenarios especiales únicos.

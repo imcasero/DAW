@@ -1,0 +1,22 @@
+para cuadrado :lado
+	repeat 4[fd :lado right 90]
+fin
+
+para figura :nlado :lado
+	repeat :nlado [fd :lado right 360/ :nlado ];
+fin
+
+para rectangulo :lado1 :lado2
+	repeat 2[fd :lado1 right 90
+	fd :lado2 right 90]
+fin
+
+para triangulo :ancho
+	repeat 3 [fd :ancho right 120]
+fin
+
+para triangulocentrado :ancho
+	left 90
+	repeat 3 [fd :ancho right 120]
+fin
+

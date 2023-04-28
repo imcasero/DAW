@@ -1,0 +1,9 @@
+<!ELEMENT agenda (contacto+)>
+
+<!ELEMENT contacto (nombre , movil?+ , fijo?)>
+<!ELEMENTE nombre (#PCDATA)>
+<!ELEMENTE movil (#PCDATA)>
+<!ELEMENTE fijo (#PCDATA)>
+
+<!ATTLIST agenda codigo CDATA #REQUIERED>
+<!ATTLIST contacto tipo CDATA #REQUIERED>

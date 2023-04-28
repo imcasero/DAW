@@ -1,0 +1,12 @@
+para quiniela
+
+	repeat 15[ print pick [1 X 2] ]
+
+fin
+
+para quinielapro
+
+	repeat 15 [print pick [1 1 1 1 1 X X 2 2 2]]
+
+fin
+

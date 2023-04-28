@@ -1,0 +1,22 @@
+para suma
+
+	make "n1 (azar 98) + 1
+	make "n2 (azar 98) + 1
+	
+	make "suma :n1 + :n2
+
+		print :n1
+		print :n2
+	make "resultado readword
+
+		ifelse :resultado = (:n1 + :n2) [
+	print [correcto]
+][
+	print :suma ]
+
+fin
+
+haz "n1 67
+haz "n2 82
+haz "resultado 1
+haz "suma 149

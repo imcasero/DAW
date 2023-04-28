@@ -1,0 +1,23 @@
+body {
+    background-color: aliceblue;
+}
+.contenedor {
+    display: flex; /*Añade felx-box*/
+    padding: 10px;
+    background-color: burlywood;
+    border: 2px solid black;
+    flex-flow: no-wrap row;
+}
+.contenedor div {
+    border: 2px solid black;
+    background-color: gainsboro;
+    margin: 10px;
+    text-align: center;/*Nos centra el texto*/
+    width : 100px;
+    line-height: 75px;
+    font-size: 30px;
+}
+.d1 {
+    flex-shrink: 0;
+}
+

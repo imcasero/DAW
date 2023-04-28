@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+   <contacto>
+      <nombre>
+         contacto1 
+      </nombre>
+      <telefono>
+          111 111 1111
+      </telefono>
+   </contacto>
+
+   <contacto>
+      <nombre>
+         contacto2
+      </nombre>
+      <telefono>
+         222 222 222         
+      </telefono>
+   </contacto>
+   
+   <contacto>
+      <nombre>
+          contacto3
+      </nombre>
+      <telefono>
+          333 333 333
+      </telefono>
+   </contacto>
+</agenda>

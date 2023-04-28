@@ -1,0 +1,28 @@
+para sumadigitos
+
+	make "i readword
+
+	make "resultado 0
+
+	while [:i <> 0][
+
+		make "resto remainder :i 10  ;ultimo digito
+
+		make "resta :i - :resto  ;numero de nuevo
+
+		make "resta :resta /10 ;nuevo numero
+
+		make "resultado :resultado + :resto ;acumulo el valor
+
+		make "i :resta ; doy el nuevo valor al numero
+]
+	
+print :resultado	
+
+fin
+
+haz "1i 1
+haz "i 0
+haz "resta 0
+haz "resto 1
+haz "resultado 6

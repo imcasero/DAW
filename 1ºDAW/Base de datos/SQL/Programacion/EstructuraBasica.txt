@@ -1,0 +1,56 @@
+begin
+	declare contador tinyiny  --> variables
+	declare micursor cursor for select... --> Cursor
+	declare claveduplicada condition for 1605 --> condicion
+	declare exit handler for claveduplicada /set mensaje ='Error'
+						Aprtir de la barra podemos 
+						hacer casi todo lo que necesitamos, 
+						desde un ocncat hasta isnertar algo 
+						en una tabla
+
+	codigo de procedimiento
+end
+
+CURSORES
+Los cursores se pueden evitar siempre, cuando solo devuelve una
+no los necesitaremos
+Su funcion es poder recorrer cada fila de una consulta para hacer
+funcionalidades en cada una
+
+	declare micursor cursor for ...(consulta asociada)
+1.declaracion
+2.apertura
+3.fetch o recorrido
+por cada fetch avanza una fila
+casi siempre tendremos un bucle dentro
+debemos declarar tantas variables como columnas tenga
+la consulta que realicemos en el cursor
+ en el fetch utilizaremos estas ej
+	fetch micursor  into var1,var2,var3,...;
+el fetch tiene dos posibles situaciones: o no encuentra mas datos
+o te devuelve una fila, si no encuentra mas datos podemos usar un handler
+con la variable terminado e igualarla a 0, y cuando se produzca el handler
+la igualaremos a 1 , saldremos de este bucle mediente un if
+
+ej --------------------------------------------------------------
+delimiter |
+create procedure calcMedia (in cur tinyint)
+begin
+	declare id tinyint;
+	declare n1,n2,n3 decimal(4,2);
+    declare terminado tinyint default 0;
+    declare micursor cursor for select idAlumno,nota1,nota3,nota3 from notas2 where curso like cur;
+    declare continue handler for not found set  terminado=1;
+    
+    open micursor;
+    mibucle: loop 
+		fetch micursor into id,n1,n2,n3;
+        if (terminado=1) then leave mibucle; 
+        end if;
+        update notas2 set final=((n1+n2+n3)/3) where idalumno = id;
+        select concat('La nota media de ',id,' es :',final) as media from notas2 where idalumno like id;
+    end loop mibucle;
+    close micursor;
+end |
+delimiter ;
+------------------------------------------------------------------

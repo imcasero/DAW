@@ -1,0 +1,12 @@
+para entrada 
+	make "edad readword
+
+	ifelse :edad >= 14 [ make "precio 10 ] [make "precio 5]
+
+	if :edad >= 65 [make "precio :precio * 0.75]
+
+	output :precio
+fin
+
+haz "edad 70
+haz "precio 7.5
